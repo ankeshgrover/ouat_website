@@ -9658,26 +9658,26 @@ function syncAttributes($sourceElement, $targetElement) {
 })(jQuery);
 // Modal--------------------------------------------------------------------------------
 const popups = [
-	{ title: "First Steps", description: "The beginning of my journey, filled with curiosity, laughter, and tiny steps toward a world of endless possibilities.", images: ["/HTML/img/assets/timeline/img1_1.png", "/HTML/img/assets/timeline/img2_1.png", "/HTML/img/assets/timeline/img3_1.png"] },
+	{ title: "First Steps", description: "The beginning of my journey, filled with curiosity, laughter, and tiny steps toward a world of endless possibilities.", images: ["../img/assets/timeline/img1_1.png", "../img/assets/timeline/img2_1.png", "../img/assets/timeline/img3_1.png"] },
 
-	{ title: "Childhood Adventures", description: "A magical time of play, imagination, and innocent joy—where every day was a new discovery, and the simplest moments felt like the biggest adventures.", images: ["/HTML/img/assets/timeline/img1_2.png", "/HTML/img/assets/timeline/img2_2.png", "/HTML/img/assets/timeline/img3_2.png"] },
+	{ title: "Childhood Adventures", description: "A magical time of play, imagination, and innocent joy—where every day was a new discovery, and the simplest moments felt like the biggest adventures.", images: ["../img/assets/timeline/img1_2.png", "../img/assets/timeline/img2_2.png", "../img/assets/timeline/img3_2.png"] },
 
-	{ title: "School Days", description: "From learning my ABCs to making my first best friends, these were the years of growth, mischief, and lessons that shaped who I am today.", images: ["/HTML/img/assets/timeline/img1_3.png", "/HTML/img/assets/timeline/img2_3.png", "/HTML/img/assets/timeline/img3_3.png"] },
+	{ title: "School Days", description: "From learning my ABCs to making my first best friends, these were the years of growth, mischief, and lessons that shaped who I am today.", images: ["../img/assets/timeline/img1_3.png", "../img/assets/timeline/img2_3.png", "../img/assets/timeline/img3_3.png"] },
 
-	{ title: "Teenage Dreams", description: "The years of self-discovery, chasing dreams, and figuring out my place in the world—filled with unforgettable moments, challenges, and newfound independence.", images: ["/HTML/img/assets/timeline/img1_4.png", "/HTML/img/assets/timeline/img2_4.png", "/HTML/img/assets/timeline/img3_4.png"] },
+	{ title: "Teenage Dreams", description: "The years of self-discovery, chasing dreams, and figuring out my place in the world—filled with unforgettable moments, challenges, and newfound independence.", images: ["../img/assets/timeline/img1_4.png", "../img/assets/timeline/img2_4.png", "../img/assets/timeline/img3_4.png"] },
 
-	{ title: "College Chronicle", description: "Late-night study sessions, lifelong friendships, and moments of self-growth—where I learned not just from books, but from experiences that shaped my future.", images: ["/HTML/img/assets/timeline/img1_5.png", "/HTML/img/assets/timeline/img2_5.png", "/HTML/img/assets/timeline/img3_5.png"] },
+	{ title: "College Chronicle", description: "Late-night study sessions, lifelong friendships, and moments of self-growth—where I learned not just from books, but from experiences that shaped my future.", images: ["../img/assets/timeline/img1_5.png", "../img/assets/timeline/img2_5.png", "../img/assets/timeline/img3_5.png"] },
 
-	{ title: "First Job, Big Dreams", description: "The transition into the real world—where I faced new challenges, learned valuable lessons, and took the first steps toward turning my ambitions into reality.", images: ["/HTML/img/assets/timeline/img1_6.png", "/HTML/img/assets/timeline/img2_6.png", "/HTML/img/assets/timeline/img3_6.png"] },
+	{ title: "First Job, Big Dreams", description: "The transition into the real world—where I faced new challenges, learned valuable lessons, and took the first steps toward turning my ambitions into reality.", images: ["../img/assets/timeline/img1_6.png", "../img/assets/timeline/img2_6.png", "../img/assets/timeline/img3_6.png"] },
 
-	{ title: "Exploring the World", description: "From breathtaking landscapes to cultural wonders, every journey has added a new story to my life. Exploring the world, one adventure at a time.", images: ["/HTML/img/assets/timeline/img1_7.png", "/HTML/img/assets/timeline/img2_7.png", "/HTML/img/assets/timeline/img3_7.png"] },
+	{ title: "Exploring the World", description: "From breathtaking landscapes to cultural wonders, every journey has added a new story to my life. Exploring the world, one adventure at a time.", images: ["../img/assets/timeline/img1_7.png", "../img/assets/timeline/img2_7.png", "../img/assets/timeline/img3_7.png"] },
 
-	{ title: "Family & Friendships", description: "The people who make life truly special—through every high and low, their love and support have been my greatest strength and joy.", images: ["/HTML/img/assets/timeline/img1_8.png", "/HTML/img/assets/timeline/img2_8.png", "/HTML/img/assets/timeline/img3_8.png"] },
+	{ title: "Family & Friendships", description: "The people who make life truly special—through every high and low, their love and support have been my greatest strength and joy.", images: ["../img/assets/timeline/img1_8.png", "../img/assets/timeline/img2_8.png", "../img/assets/timeline/img3_8.png"] },
 	
 
-	{ title: "Passion & Purpose", description: "Discovering what truly makes me happy and finding the courage to pursue it. This is the chapter where dreams turn into reality, and passion fuels my journey.", images: ["/HTML/img/assets/timeline/img1_9.png", "/HTML/img/assets/timeline/img2_9.png", "/HTML/img/assets/timeline/img3_9.png"] },
+	{ title: "Passion & Purpose", description: "Discovering what truly makes me happy and finding the courage to pursue it. This is the chapter where dreams turn into reality, and passion fuels my journey.", images: ["../img/assets/timeline/img1_9.png", "../img/assets/timeline/img2_9.png", "../img/assets/timeline/img3_9.png"] },
 
-	{ title: "Present & Future", description: "Reflecting on the journey so far with gratitude, embracing the present with joy, and looking ahead with excitement for all that is yet to come.", images: ["/HTML/img/assets/timeline/img1_10.png", "/HTML/img/assets/timeline/img2_10.png", "/HTML/img/assets/timeline/img3_10.png"] }
+	{ title: "Present & Future", description: "Reflecting on the journey so far with gratitude, embracing the present with joy, and looking ahead with excitement for all that is yet to come.", images: ["../img/assets/timeline/img1_10.png", "../img/assets/timeline/img2_10.png", "../img/assets/timeline/img3_10.png"] }
 ];
 
 

@@ -12705,12 +12705,12 @@ small, .small {
 }
 
 .bg-img {
-  background-image: url("/HTML/img/general/stories-bg-img.png");
+  background-image: url("../img/general/stories-bg-img.png");
 }
 
 .tagline-bg, .scene {
   background-size: contain;
-  background-image: url("/HTML/img/general/tagline-bg.png");
+  background-image: url("../img/general/tagline-bg.png");
 }
 
 /* Loader Css */
