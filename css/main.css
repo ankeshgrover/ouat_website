@@ -13162,6 +13162,7 @@ z-index: 999; }
 /* Feature-------------- */
 .featute li{
   padding: 1rem 0;
+  display: flex;
 }
 .featute li img{
   margin-right: 1rem;;
