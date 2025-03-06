@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Once Upon A Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="description" content="Once Upon A Time – AJAX Portfolio HTML5 Template" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
+  <!-- Template Vendor's Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+  <!-- Template Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- Favicons & App Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/content/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/content/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="img/content/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/content/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/content/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/content/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/content/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicon-16x16.png" />
+  <link rel="manifest" href="img/content/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/x-icon" href="img/content/favicon.ico" />
+
+</head>
+
+<body>
+  <div data-barba="wrapper">
+    <!-- PAGE PRELOADER -->
+    <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+      <div class="preloader__content">
+        <!-- header -->
+        <div class="preloader__header mt-auto">
+          <div class="preloader__heading h2"><img src="img/assets/project4/icon_logo.png" alt=""></div>
+          <div class="preloader__subline small-caps mt-1">Once Upon a Time</div>
+        </div>
+        <!-- - header -->
+        <!-- counter -->
+        <div class="preloader__counter h5"><span
+            class="preloader__counter-number preloader__counter-current">0</span><span
+            class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
+            class="preloader__counter-number preloader__counter-total">100</span></div>
+        <!-- - counter -->
+        <!-- circle holder -->
+        <div class="preloader__circle"></div>
+        <!-- - circle holder -->
+      </div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+    <!-- Loading Spinner -->
+    <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <!-- - Loading Spinner -->
+    <!-- Transition Curtain-->
+    <!-- TRANSITION CURTAINS -->
+    <!-- page curtain AJAX transition -->
+    <div class="curtain transition-curtain" id="js-page-transition-curtain">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - page curtain AJAX transition -->
+    <!-- header curtain show/hide -->
+    <div class="header-curtain curtain" id="js-header-curtain">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - header curtain show/hide -->
+    <!-- header curtain AJAX transition -->
+    <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - header curtain AJAX transition -->
+    <!-- - TRANSITION CURTAINS -->
+    <!-- Cursor Follower-->
+    <div class="cursor" id="js-cursor">
+      <div class="cursor__wrapper">
+        <!-- circles -->
+        <div class="cursor__follower">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+            <circle id="outer" cx="25" cy="25" r="24"
+              style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+          </svg>
+        </div>
+        <!-- - circles -->
+        <!-- arrows -->
+        <div class="cursor__arrows">
+          <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+          <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+          <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+          <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+        </div>
+        <!-- - arrows -->
+        <!-- label holder -->
+        <div class="cursor__label"></div>
+        <!-- - label holder -->
+        <!-- icon holder -->
+        <div class="cursor__icon material-icons"></div>
+        <!-- - icon holder -->
+      </div>
+    </div>
+    <!-- - Cursor Follower-->
+    <!-- PAGE HEADER -->
+    <header class="header header_menu-right header_fixed container-fluid js-header-sticky bg-dark" id="page-header"
+      data-arts-theme-text="light" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="secondary"
+      data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
+      data-arts-header-overlay-background="#ffffff">
+      <!-- top bar -->
+      <div class="header__container header__controls">
+        <div class="row justify-content-between align-items-center">
+          <!-- logo -->
+          <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
+              <div class="logo__wrapper-img">
+                <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
+                  src="img/general/logo_green.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
+                  src="img/general/logo_light.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+              </div>
+            </a>
+          </div>
+          <!-- - logo -->
+          <!-- burger icon -->
+          <div class="col-auto header__col">
+            <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+          </div>
+          <!-- - burger icon -->
+          <!-- "back" button for submenu nav -->
+          <div class="header__overlay-menu-back" id="js-submenu-back">
+            <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - "back" button for submenu nav -->
+        </div>
+      </div>
+      <!-- - top bar -->
+      <!-- fullscreen overlay container -->
+      <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+      <!-- fullscreen menu -->
+      <div class="header__wrapper-menu mt-0">
+        <ul class="menu-overlay js-menu-overlay">
+          <li  class="menu-item-has-children"><a class="h2" href="page-inner-about-2.html" data-pjax-link="overlayMenu">
+            <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us</div></a>
+        </li>
+          <li  class="menu-item-has-children"><a class="h2" href="page-inner-contacts-1.html" data-pjax-link="overlayMenu">
+            <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Contact Us</div></a>
+        </li>
+        </ul>
+      </div>
+      <!-- - fullscreen menu -->
+        <!-- fullscreen widgets -->
+        <div class="header__wrapper-overlay-widgets">
+          <div class="row">
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">
+                Contacts</div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p><a href="onceuponatime@example.com">onceuponatime@example.com</a><br />+1 859-795-9217<br />+1
+                  716-913-6279<br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Office
+              </div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p>4903 Mayo Street<br />Cincinnati, KY 45202<br />USA<br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Want to
+                Work with Me?</div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p><a href="page-inner-contacts-1.html">Get in Touch</a><br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+          </div>
+        </div>
+        <!-- - fullscreen widgets -->
+      </div>
+      <!-- - fullscreen overlay container -->
+    </header>
+    <!-- - PAGE HEADER -->
+    <!-- PAGE MAIN -->
+    <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
+      <main class="page-wrapper__content" style="background-color: #fff;">
+        <!-- section MASTHEAD FULLSCREEN -->
+        <section class="section section-masthead section-fullheight text-center"
+          data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark"
+          data-background-color="var(--color-dark-1)">
+          <div class="section-masthead__inner section-fullheight__inner container-fluid">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col">
+                <!-- <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                  data-split-text-type="lines,words" data-split-text-set="words" style="color: #fff;"><span>Portraits
+                    Your Memories</span></div> -->
+                <div class="w-100"></div>
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                  data-split-text-set="words">
+                  <img src="../HTML/img/general/icon_logo.png" alt="">
+                  <h1 class="h1 mt-0 mb-0" style="color: #fff;">Once Upon A time</h1>
+                </div>
+                <div class="w-100"> <img src="../HTML/img/general/tag_line.svg" alt=""></div>
+                <div class="section__headline mt-2 mx-auto"></div>
+              </div>
+              <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center">
+                <div class="circle-button js-circle-button" data-arts-os-animation="true">
+                  <!-- curved label -->
+                  <div class="circle-button__outer">
+                    <div class="circle-button__wrapper-label">
+                      <div class="circle-button__label small-caps">Scroll Down</div>
+                    </div>
+                  </div>
+                  <!-- - curved label -->
+                  <!-- geometry wrapper -->
+                  <div class="circle-button__inner">
+                    <div class="circle-button__circle" data-arts-scroll-down="data-arts-scroll-down"
+                      data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                      data-arts-cursor-scale="0">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <!-- browsers with touch support -->
+                    <div class="circle-button__icon circle-button__icon-touch">
+                      <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z">
+                        </path>
+                      </svg>
+                    </div>
+                    <!-- - browsers with touch support -->
+                    <!-- - browsers without touch support -->
+                    <div class="circle-button__icon circle-button__icon-mouse">
+                      <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" style="fill: #fff;"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- border -->
+                        <path class="svg-mouse__border"
+                          d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z">
+                        </path>
+                        <!-- - border -->
+                        <!-- wheel -->
+                        <path class="svg-mouse__wheel"
+                          d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z">
+                        </path>
+                        <!-- - wheel -->
+                      </svg>
+                    </div>
+                    <!-- - browsers without touch support -->
+                  </div>
+                  <!-- - geometry wrapper -->
+                </div>
+              </div>
+            </header>
+          </div>
+          <div class="section-image section-masthead__background section-masthead__background_fullscreen">
+
+            <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax"
+              data-arts-parallax-factor="0.15">
+              <div class="js-transition-img__transformed-el">
+                <div class="lazy-bg" data-src="img/assets/projects/intro.mp4">
+                  <video width="100%" autoplay loop plays-inline muted class="back-video">
+                    <source src="../HTML/img/general/intro.mp4" type="video/mp4">
+                  </video>
+
+                </div>
+              </div>
+              <!-- overlay-->
+              <div class="overlay overlay_bottom-dark overlay_deither section-masthead__overlay">
+
+              </div>
+              <!-- - overlay -->
+            </div>
+        </section>
+        <!-- - section MASTHEAD FULLSCREEN -->
+
+        <!-- section CONTENT #1 -->
+        <div class="container-fluid tagline-bg">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <section class="section section-content clearfix pt-medium pb-medium text-center"
+                data-arts-os-animation="data-arts-os-animation">
+                <div class="section-content__inner">
+                  <div class="w-100"></div>
+                  <div class="section__headline mb-1 mb-md-2 mx-auto" ></div>
+                  <div class="w-100"></div>
+                  <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h4 class="text-accent"> Imagine a world where every family's story is treasured, we are making
+                      that a reality with <b> " Once Upon a Time" </b> – a revolutionary service that transforms
+                      cherished memories into beautiful legacy storybooks. We're not just printing books; we're weaving
+                      magic. We help families capture the essence of their loved ones – their laughter, their wisdom,
+                      their unique journey – and transform it into a tangible heirloom to be cherished for generations.
+                    </h4>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- - section CONTENT #1 -->
+        <!-- section MASTHEAD -->
+        <section class="section section-masthead pt-small pb-small text-center"
+          data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+          <div class="section-masthead__inner container-fluid">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col-lg-8">
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                  data-split-text-set="words">
+                  <h1 class="mt-0 mb-0 h1"> Actual Final Product Features</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mx-auto"></div>
+              </div>
+            </header>
+          </div>
+        </section>
+        <!-- - section MASTHEAD -->
+       
+        <!-- section IMAGE #1 -->
+        <section class="section section-image section_h-800">
+          <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+            <div>
+              <div class="lazy-bg" data-src="img/assets/project7/img-7-1.jpg"></div>
+            </div>
+          </div>
+        </section>
+        <!-- - section IMAGE #1 -->
+        <!-- sections CONTENT & IMAGE #1 -->
+        <div class="container-fluid no-gutters">
+          <div class="row no-gutters align-items-center">
+            <div class="col-lg-6">
+              <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings pt-4" data-arts-os-animation="data-arts-os-animation">
+                <div class="section-content__inner">
+                  <div class="w-100"></div>
+                  <div class="section__headline mb-1 mb-md-2"></div>
+                  <div class="w-100"></div>
+                  <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                    <h2>Product Features</h2>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines" data-split-text-set="lines">
+                    <ul class="featute">
+                      <li><img src="../HTML/img/general/paper.svg" alt=""> <span> High quality, long lasting paper</span></li>
+                      <li><img src="../HTML/img/general/bound.svg" alt=""> <span> Hard bound</span></li>
+                      <li><img src="../HTML/img/general/color.svg" alt=""> <span> Full Colour print</span></li>
+                      <li><img src="../HTML/img/general/gift.svg" alt=""> <span> Keepsake gift box</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6">
+              <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                <div class="section-content__inner">
+                  <div class="w-100"></div>
+                  <div class="section__headline mb-1 mb-md-2"></div>
+                  <div class="w-100"></div>
+                  <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                    <h2>Service Features</h2>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                    <ul class="featute">
+                      <li><img src="../HTML/img/general/prompts.svg" alt=""> <span>Guided Prompts</span></li>
+                      <li><img src="../HTML/img/general/interface.svg" alt=""> <span>Simple User Friendly Interface</span></li>
+                      <li><img src="../HTML/img/general/voicetotext.svg" alt=""> <span>Voice to Text (package dependent)</span></li>
+                      <li><img src="../HTML/img/general/grammarly.svg" alt=""> <span>Grammarly Integration (package dependent)</span></li>
+                      <li><img src="../HTML/img/general/ai_editing.svg" alt=""> <span>One click AI editing (package dependent)</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+           
+            
+          </div>
+        </div>
+        <!-- - sections CONTENT & IMAGE #1 -->
+
+
+
+        <!-- section MASTHEAD -->
+        <section class="section section-masthead d-none" data-background-color="var(--color-dark-2)"></section>
+        <!-- - section MASTHEAD -->
+        <!-- Section Timeline-->
+        <section class="bg-neutral-3 section section-grid section-content overflow pb-medium bg-neutral-2 pb-2"
+          data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
+          data-grid-mobile="1" data-arts-theme-text="light" style="margin-top: -1px;">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center section pb-2">
+              <div class="col-12 col-lg-auto">
+                <h1 class="h1 mt-2 mb-0 text-accent">Stories</h1>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mr-auto bg-accent"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row p-0 justify-content-between align-items-center section pb-medium">
+              <div class="timelinebg container-tmln">
+                <div class="scroll-parent">
+                  <div class="scroll-element primary">
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                  </div>
+                  <div class="scroll-element secondary">
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                    <span class="dashed_line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-auto storiey_timeline">
+                <div class="cards-wrapper">
+
+                  <div class="card mb-5">
+                    <img src="../HTML/img/assets/timeline/timeline01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">First Steps</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(0)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <div class="card mt-5">
+                    <img src="../HTML/img/assets/timeline/timeline02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Childhood Adventures</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(1)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-5">
+                    <img src="../HTML/img/assets/timeline/timeline03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">School Days</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(2)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <div class="card mt-5">
+                    <img src="../HTML/img/assets/timeline/timeline04.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Teenage Dreams</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(3)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-5">
+                    <img src="../HTML/img/assets/timeline/timeline05.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">College Chronicles</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(4)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <div class="card mt-5">
+                    <img src="../HTML/img/assets/timeline/timeline06.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0"> First Job, Big Dreams</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(5)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-5">
+                    <img src="../HTML/img/assets/timeline/timeline07.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Exploring the World</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(6)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <div class="card mt-5">
+                    <img src="../HTML/img/assets/timeline/timeline08.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Family & Friendships</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(7)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-5">
+                    <img src="../HTML/img/assets/timeline/timeline09.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Passion & Purpose</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(8)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <div class="card mt-5">
+                    <img src="../HTML/img/assets/timeline/timeline10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Present & Future</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(9)" class="trigger button button_solid button_black mb-0-5" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+
+                  <!-- Modal -->
+
+                  <div id="popup" class="popup modal-content animate__animated animate__fadeIn">
+                    <span class="close close-button" onclick="closePopup()">&times;</span>
+                    <div class="model-wrapper">
+                      <div class="left-content">
+                        <h3 id="popup-title"></h3>
+                        <p id="popup-description" class="typing-container"></p>
+                        <!-- <p id="body">Cochin</p>
+                            <p id="handwritten_notes">Falidasi Triasie</p>
+                            <p id="dates">engravers gothic bt</p> -->
+                      </div>
+                      <div class="right-image" id="popup-images"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- - section Timeline-->
+
+        <!-- section GRID PROJECTS 3 COLUMNS-->
+        <section class="section section-grid section-content overflow pb-medium bg-img"
+          data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
+          data-grid-mobile="1" data-arts-theme-text="light" style="margin-top: -1px;">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center section pt-5 pb-4">
+              <div class="col-12 col-lg-auto">
+                <h1 class="h1 mt-0 mb-0 text-accent">Product</h1>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mr-auto text-accent bg-accent"></div>
+              </div>
+              <div class="col-12 col-lg-auto pt-medium pt-md-0 pb-md-3">
+                <div class="filter js-filter">
+                  <div class="filter__inner">
+                    <div class="container-fluid no-gutters">
+                      <!-- items -->
+
+                      <!-- underline -->
+                      <div class="filter__underline js-filter__underline"></div>
+                      <!-- - underline -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid_fluid-5 js-grid">
+              <div
+                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy grid__sizer js-grid__sizer">
+              </div>
+              <div
+                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-portraits">
+                <div class="section-grid__item"><a class="figure-project hover-zoom js-change-text-hover"
+                    href="#">
+                    <div class="hover-zoom__inner">
+                      <div class="hover-zoom__zoom">
+                        <div class="figure-project__wrapper-img js-transition-img"
+                          data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                          <div class="lazy js-transition-img__transformed-el"><img
+                              data-src="img/assets/projects/project-1_vertical.jpg" src="#" alt="" width="1280"
+                              height="1920" /></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                      <h4 class="h4 figure-project__heading text-accent">Memories</h4>
+                      <div class="figure-project__category mt-md-1 mt-0-5">
+                        <div
+                          class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                          <!-- label by default -->
+                          <div class="js-split-text split-text"
+                            data-split-text-type="lines" data-split-text-set="lines">
+                            <p class="product_desc text-accent">Cherish and preserve your most treasured moments with a beautifully crafted storytelling photo book.</p><span class=" figure-service__amount h3 text-accent">₹ 1100</span>
+                            <a class="button button_solid button_black mb-0-5" data-hover="Learn More" href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          </div>
+
+                          <!-- - label by default -->
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-portraits" style="margin-top: 0;">
+                <div class="section-grid__item"><a class="figure-project hover-zoom js-change-text-hover"
+                    href="#">
+                    <div class="hover-zoom__inner">
+                      <div class="hover-zoom__zoom">
+                        <div class="figure-project__wrapper-img js-transition-img"
+                          data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                          <div class="lazy js-transition-img__transformed-el"><img
+                              data-src="img/assets/projects/project-2_vertical.jpg" src="#" alt="" width="1280"
+                              height="1920" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                      <h4 class="h4 figure-project__heading  text-accent">Love Story</h4>
+                      <div class="figure-project__category mt-md-1 mt-0-5">
+                        <div
+                          class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                          <!-- label by default -->
+                          <div class="js-split-text split-text "
+                            data-split-text-type="lines" data-split-text-set="lines">
+                            <p class="product_desc  text-accent">Celebrate your journey together with a personalized book filled with romance, memories, and heartfelt moments.</p><span class=" figure-service__amount h3 text-accent">₹
+                              2100</span>
+                              <a class="button button_solid button_black mb-0-5" data-hover="Learn More" href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          </div>
+                          <!-- - label by default -->
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-5 grid__item_fluid-5-fancy js-grid__item category-ui-ux-design">
+                <div class="section-grid__item"><a class="figure-project hover-zoom js-change-text-hover"
+                    href="#">
+                    <div class="hover-zoom__inner">
+                      <div class="hover-zoom__zoom">
+                        <div class="figure-project__wrapper-img js-transition-img"
+                          data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                          <div class="lazy js-transition-img__transformed-el"><img
+                              data-src="img/assets/projects/project-3_vertical.jpg" src="#" alt="" width="1280"
+                              height="1920" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="figure-project__content pl-md-2 pt-md-2 pt-1 pl-0">
+                      <h4 class="h4 figure-project__heading  text-accent">Professional Story</h4>
+                      <div class="figure-project__category mt-md-1 mt-0-5">
+                        <div
+                          class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
+                          <!-- label by default -->
+                          <div class=" js-split-text split-text"
+                            data-split-text-type="lines" data-split-text-set="lines">
+                            <p class="product_desc text-accent">Showcase your career milestones, remarkable achievements, and inspiring success story in a professionally designed keepsake.</p><span class=" figure-service__amount h3 text-accent">₹
+                              1500</span>
+                              <a class="button button_solid button_black mb-0-5" data-hover="Learn More" href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          </div>
+                          <!-- - label by default -->
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- - section GRID PROJECTS 3 COLUMNS-->
+
+        <!-- section VIDEO BACKGROUND -->
+        <!-- <section class="section section-image section_h-800">
+          <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+            <video class="of-cover" src="img/assets/sectionVideo/videio_ai.mp4" autoplay="autoplay"
+              playsinline="playsinline" muted="muted" loop="loop"></video>
+          </div>
+        </section> -->
+        <!-- - section VIDEO BACKGROUND -->
+
+        <!-- How it works -->
+                 <!-- section MASTHEAD -->
+        <section class="section section-masthead pt-large pb-medium text-center"
+        data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+        <div class="section-masthead__inner container-fluid">
+          <header class="row section-masthead__header justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                data-split-text-set="words">
+                <h1 class="mt-0 mb-0 h1">How it works</h1>
+              </div>
+              <div class="w-100"></div>
+              <div class="section__headline mt-2 mx-auto"></div>
+            </div>
+          </header>
+        </div>
+      </section>
+      <!-- - section MASTHEAD -->
+        <div class="container">
+          <ol class="step-list">
+              <li class="step-list__item">
+                  <div class="step-list__item__inner">
+                      <div class="content">
+                          <div class="body">
+                              <h2>Choose your book type, make the purchase
+                              </h2>
+                              <!-- <p>Consectetur adipisicing elit. Reprehenderit perspiciatis.</p> -->
+                          </div>
+      
+                          <div class="icon">
+                              <img src="../HTML/img/general/book1.svg" alt="Check" />
+                          </div>                
+                      </div>
+                  </div>
+              </li>
+              <li class="step-list__item">
+                  <div class="step-list__item__inner">
+                      <div class="content">
+                          <div class="body">
+                              <h2>Log in to your dashboard and start your onboarding journey</h2>
+                              <!-- <p>Sapiente beatae? Quo maiores consequatur, eveniet autem eos quia molestias perferendis.</p> -->
+                          </div>
+      
+                          <div class="icon">
+                              <img src="../HTML/img/general/dashboard2.svg" alt="Check" />
+                          </div>                
+                      </div>
+                  </div>
+              </li>
+              <li class="step-list__item">
+                  <div class="step-list__item__inner">
+                      <div class="content">
+                          <div class="body">
+                              <h2>Weekly prompts (answer through webapp, mobile app, etc)
+                              </h2>
+                              <!-- <p> Asperiores eum, accusantium harum, aperiam labore assumenda quisquam tempore magnam enim iusto voluptatum aspernatur dicta saepe possimus nobis molestiae quas sapiente.</p> -->
+                          </div>
+      
+                          <div class="icon">
+                              <img src="../HTML/img/general/prompt3.svg" alt="Check" />
+                          </div>                
+                      </div>
+                  </div>
+              </li>
+              <li class="step-list__item">
+                  <div class="step-list__item__inner">
+                      <div class="content">
+                          <div class="body">
+                              <h2>Edit and Design your book and book cover</h2>
+                              <!-- <p> Iusto quod incidunt vel quidem fuga quos laudantium dignissimos eos, tempore sequi quis praesentium.</p> -->
+                          </div>
+      
+                          <div class="icon">
+                              <img src="../HTML/img/general/editdesign4.svg" alt="Check" />
+                          </div>                
+                      </div>
+                  </div>
+              </li>
+              <li class="step-list__item">
+                  <div class="step-list__item__inner">
+                      <div class="content">
+                          <div class="body">
+                              <h2>Get the book delivered to your doorstep</h2>
+                              <!-- <p>Officiis excepturi atque velit asperiores cum perferendis, repellendus facilis voluptatibus quas! Consequuntur.</p> -->
+                          </div>
+      
+                          <div class="icon">
+                              <img src="../HTML/img/general/delivered5.svg" alt="Check" />
+                          </div>                
+                      </div>
+                  </div>
+              </li>
+          </ol>
+      </div>
+        <!-- How its works -->
+
+
+        <!-- section MASTHEAD -->
+        <section class="section section-masthead pt-large pb-medium text-center"
+          data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+          <div class="section-masthead__inner container-fluid">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col-lg-8">
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                  data-split-text-set="words">
+                  <h1 class="mt-0 mb-0 h1">Customer Review</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mx-auto"></div>
+              </div>
+            </header>
+          </div>
+        </section>
+        <!-- - section MASTHEAD -->
+        <!-- section SERVICES SLIDER -->
+        <section class="section section-services section-slider-images">
+          <div class="slider slider-services slider-images js-slider-images">
+            <div class="swiper-container js-slider-images__slider" data-slides-per-view="1.4"
+              data-slides-per-view-tablet="1.2" data-slides-per-view-mobile="1.1" data-centered-slides="true"
+              data-autoplay-enabled="true" data-drag-mouse="true" data-drag-cursor="true"
+              data-drag-class="slider-images_touched" data-auto-height="true">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-1_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Sophia Carter</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️ <br>
+                                "I was blown away by how beautifully my memories were turned into a book! Every detail
+                                was captured perfectly, making it an emotional and heartwarming keepsake for my family.
+                                Highly recommended!</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-2_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Isabella Thompson</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️ <br>
+                                "This storytelling service made my childhood memories come alive again. The design, the
+                                writing, and the emotion poured into the book exceeded my expectations. A truly magical
+                                experience!"</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-3_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Ethan Harrison</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️ <br>
+                                "I never thought my life stories could be turned into such a wonderful book. Every page
+                                felt special, and the quality was amazing. A must-try service for anyone looking to
+                                preserve memories!"</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-4_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Alexander Reynolds</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️ <br>
+                                "As someone who loves nostalgia, this book brought my memories to life in the most
+                                elegant way. The storytelling was touching, and the visuals were stunning. Would
+                                absolutely recommend!"</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-5_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Benjamin Foster</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️ <br>
+                                "This was more than just a book—it was a time machine! The team perfectly captured my
+                                moments, making this one of the most valuable possessions I own. Fantastic job!"</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container figure-service bg-white">
+                    <div class="row no-gutters">
+                      <!-- background image -->
+                      <div class="col-lg-5 overflow">
+                        <div class="w-100 h-100" data-swiper-parallax-zoom="20%" data-swiper-parallax="20%">
+                          <!-- zoom on drag container -->
+                          <div class="slider__zoom-container w-100 h-100">
+                            <div class="figure-service__wrapper-bg">
+                              <div class="slider__bg swiper-lazy"
+                                data-background="img/assets/sectionServices/service-6_thumb.jpg"></div>
+                            </div>
+                          </div>
+                          <!-- - zoom on drag container -->
+                        </div>
+                      </div>
+                      <!-- - background image -->
+                      <!-- content -->
+                      <div class="col-lg-7">
+                        <div class="figure-service__content p-small">
+                          <!-- header -->
+                          <div class="figure-service__header">
+                            <div class="figure-service__heading">
+                              <h2 class="h2 mt-0 mb-0">Olivia Martinez</h2>
+                            </div>
+                            <div class="figure-service__text">
+                              <p class="mb-0 mt-1">⭐️⭐️⭐️⭐️⭐️<br>
+                                "I gifted a personalized memory book to my parents, and they were in tears of joy! The
+                                service is professional, creative, and deeply meaningful. Best decision ever!"</p>
+                            </div>
+                          </div>
+                          <!-- - header -->
+
+                        </div>
+                      </div>
+                      <!-- - content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider FOOTER -->
+            <div class="container slider-services__footer mt-1 mt-md-2">
+              <div class="row justify-content-between align-items-center">
+                <!-- slider COUNTER (current) -->
+                <div class="col-auto">
+                  <div class="slider__counter slider__counter_mini">
+                    <div class="js-slider__counter-current swiper-container">
+                      <div class="swiper-wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- - slider COUNTER (current) -->
+                <!-- slider DOTS -->
+                <div class="col-auto">
+                  <div class="slider__dots js-slider__dots">
+                    <div class="slider__dot slider__dot_active">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                    <div class="slider__dot">
+                      <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- - slider DOTS -->
+                <!-- slider COUNTER (total) -->
+                <div class="col-auto">
+                  <div class="slider__total slider__total_mini js-slider__counter-total">I</div>
+                </div>
+                <!-- - slider COUNTER (total) -->
+              </div>
+            </div>
+            <!-- - slider FOOTER -->
+          </div>
+        </section>
+        <!-- - section SERVICES SLIDER -->
+        <!-- FAQ -->
+                 <!-- section MASTHEAD -->
+        <section class="section section-masthead pt-large pb-medium text-center"
+        data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+        <div class="section-masthead__inner container-fluid">
+          <header class="row section-masthead__header justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                data-split-text-set="words">
+                <h1 class="mt-0 mb-0 h1">FAQ</h1>
+              </div>
+              <div class="w-100"></div>
+              <div class="section__headline mt-2 mx-auto"></div>
+            </div>
+          </header>
+        </div>
+      </section>
+      <!-- - section MASTHEAD -->
+        <div class="container">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"> What is "Once Upon a Time," and how does it work?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Once Upon a Time" is a storytelling service that transforms your cherished family memories into beautifully crafted legacy storybooks. We work closely with you to collect stories, photos, and details, then our expert writers and designers bring them to life in a timeless keepsake.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Can I personalize my storybook?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Absolutely! Every book is fully customized to reflect your family's unique journey. You can include personal anecdotes, family photos, favorite quotes, and even handwritten notes to make it truly special.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How long does it take to create a legacy storybook?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>The timeline varies depending on the depth and complexity of the story, but typically, it takes between 4 to 8 weeks from start to finish. Our team ensures each book is crafted with care and attention to detail.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Who writes the stories, and can I be involved in the process?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Our professional writers skillfully craft your story based on interviews, notes, and any material you provide. You will have the opportunity to review and provide feedback throughout the process to ensure the final book truly reflects your family's legacy.</p>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What makes these storybooks different from a regular photo album?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Unlike a simple photo album, our legacy storybooks capture not just images but the heart and soul of your family's journey. We blend storytelling with visuals to preserve emotions, experiences, and wisdom, creating a treasured heirloom for generations to come.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ -->
+        <!-- section MASTHEAD -->
+
+        <section class="section section-masthead pt-large pb-medium text-center"
+          data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
+          <div class="section-masthead__inner container-fluid">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col-lg-8">
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                data-split-text-set="words">
+                <h1 class="mt-0 mb-0 h1">Contact Us</h1>
+              </div>
+                <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                  data-split-text-type="lines,words" data-split-text-set="words"><span>Get in Touch</span></div>
+                <div class="w-100"></div>
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                  data-split-text-set="words">
+                  <h1 class="mt-0 mb-0 h2">Let's Discuss How to Memorize Your Amazing Moments of Life</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mx-auto"></div>
+              </div>
+            </header>
+          </div>
+        </section>
+        <!-- - section MASTHEAD -->
+         <!-- section CONTACTS 3 COLUMNS -->
+         <section class="section section-fullheight">
+          <div class="section-fullheight__inner">
+            <div class="container-fluid no-gutters h-100">
+              <div class="row no-gutters h-100">
+                <!-- section IMAGE -->
+                <div class="col-lg-4 order-lg-2">
+                  <section class="section section-masthead" data-arts-os-animation="true" data-background-color="var(--color-light-1)">
+                    <div class="section section-image section-masthead__background w-100 h-100vh">
+                      <div class="section-image__wrapper js-transition-img" data-arts-parallax data-arts-parallax-factor="0.15">
+                        <div class="js-transition-img__transformed-el">
+                          <div class="lazy-bg" data-src="img/assets/sectionContacts/img-1.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- - section IMAGE -->
+                <!-- section CONTACTS -->
+                <div class="col-lg-4 text-lg-right order-lg-1">
+                  <div class="h-100 d-flex justify-content-end flex-column py-md-3 py-1 container-fluid">
+                    <section class="section section-contacts section-properties section-content" data-arts-os-animation="data-arts-os-animation">
+                      <div class="container-fluid no-gutters">
+                        <div class="row no-gutters">
+                          <div class="col">
+                            <div class="section-properties__item my-2">
+                              <div class="figure-info split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                <div class="figure-info__option small-caps">Studio</div>
+                                <div class="figure-info__value paragraph">4903 Mayo Street<br>Cincinnati, KY 45202<br>USA</div>
+                              </div>
+                            </div>
+                            <div class="section-properties__item my-2">
+                              <div class="figure-info split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                <div class="figure-info__option small-caps">Want to Talk?</div>
+                                <div class="figure-info__value paragraph"><a href="mailto:onceuponatime@example.com">onceuponatime@example.com</a><br>+1 859-795-9217<br>+1 716-913-6279</div>
+                              </div>
+                            </div>
+                            <div class="section-properties__item my-2">
+                              <div class="figure-info split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                <div class="figure-info__option small-caps">Social Media</div>
+                                <ul class="social">
+                                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <!-- - section CONTACTS -->
+                <!-- section FORM -->
+                <div class="col-lg-4 order-lg-3">
+                  <div class="bg-white h-100 d-flex flex-column justify-content-center py-3 container-fluid">
+                    <section class="section section-form">
+                      <form class="form form-contact js-ajax-form bg-white" action="mail.php" method="POST" data-message-success="Thanks for your message! We will reply you as soon as possible." data-message-error="Something went wrong :( Please contact me directly at &lt;a href=&quot;onceuponatime@example.com&quot;&gt;onceuponatime@example.com&lt;/a&gt;">
+                        <!-- header -->
+                        <div class="row form__row">
+                          <div class="col form__col">
+                            <h3 class="h3 mt-0 mb-0">Send Message</h3>
+                          </div>
+                        </div>
+                        <!-- - header -->
+                        <!-- input #1 -->
+                        <div class="row form__row">
+                          <div class="col form__col">
+                            <label class="input-float js-input-float">
+                              <input class="input-float__input" type="text" name="visitor_name" required="required" data-msg="Please enter your name"/><span class="input-float__label">Your Name</span><span class="form__error"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- - input #1 -->
+                        <!-- input #2 -->
+                        <div class="row form__row">
+                          <div class="col form__col">
+                            <label class="input-float js-input-float">
+                              <input class="input-float__input" type="email" name="visitor_email" required="required" data-msg="Please enter a correct e-mail"/><span class="input-float__label">Your E-mail</span><span class="form__error"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- - input #2 -->
+                        <!-- input #3 -->
+                        <div class="row form__row">
+                          <div class="col form__col">
+                            <label class="input-float js-input-float">
+                              <textarea class="input-float__input input-float__input_textarea" name="visitor_msg"></textarea><span class="input-float__label">Your Message</span><span class="form__error"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- - input #3 -->
+                        <!-- submit -->
+                        <div class="row form__row">
+                          <div class="col form__col form__col_submit">
+                            <button class="button button_solid button_black button_fullwidth" data-hover="Send Message"><span class="button__label-hover">Send Message</span></button>
+                          </div>
+                        </div>
+                        <!-- - submit -->
+                      </form>
+                    </section>
+                  </div>
+                </div>
+                <!-- - section FORM -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- - section CONTACTS 3 COLUMNS -->
+
+      
+      </main>
+
+      <!-- PAGE FOOTER -->
+      <footer class="footer container-fluid" id="page-footer" data-arts-theme-text="dark"
+        data-arts-footer-logo="primary">
+        <!-- widgets top area -->
+        <div class="footer__area pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0">
+          <div class="row">
+            <!-- call to action -->
+            <div class="col-lg-5">
+              <section class="widget widget_Once Upon A Time_cta">
+                <!-- header -->
+                <h2 class="h2 mt-0 mb-0-5">Ready to Capture the Moments?</h2>
+                <!-- - header -->
+                <!-- button --><a class="button button_solid button_black mb-0-5" data-hover="Get in Touch"
+                  href="page-inner-contacts-1.html"><span class="button__label-hover">Get in Touch</span></a>
+                <!-- - button -->
+              </section>
+            </div>
+            <!-- - call to action -->
+            <div class="col-lg-7">
+              <div class="row justify-content-lg-between">
+                <!-- widget MENU #1 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">2020' Works</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="project-details-1-fullscreen-center.html">Nordic Adventure</a>
+                      </li>
+                      <li><a href="project-details-2-bottom-center.html">Sunrise in Desert</a>
+                      </li>
+                      <li><a href="project-details-3-halfscreen-left-right.html">Cassio Apartment</a>
+                      </li>
+                      <li><a href="project-details-4-halfscreen-left-left.html">Nothern Wave</a>
+                      </li>
+                      <li><a href="project-details-5-bottom-container-center.html">On the Edge</a>
+                      </li>
+                      <li><a href="project-details-6-bottom-fullwidth.html">Paysage Fiction</a>
+                      </li>
+                      <li><a href="project-details-7-fullscreen-left.html">Silence &amp; Noise</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #1 -->
+                <!-- widget MENU #2 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">2019' Works</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="project-details-8-halfscreen-right-left.html">Minimalex Cosmetics</a>
+                      </li>
+                      <li><a href="project-details-9-fullscreen-center.html">La Isla Bonita</a>
+                      </li>
+                      <li><a href="project-details-10-halfscreen-left-right.html">Kinsey Premium Furniture</a>
+                      </li>
+                      <li><a href="project-details-11-fullscreen-center.html">Dancing in the Dark</a>
+                      </li>
+                      <li><a href="project-details-12-bottom-container-center.html">The Silent Listener</a>
+                      </li>
+                      <li><a href="project-details-13-bottom-container-center.html">Arrigo Casual Accessories</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #2 -->
+                <!-- widget MENU #3 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">Services</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="#">Weddings</a>
+                      </li>
+                      <li><a href="#">Portraits</a>
+                      </li>
+                      <li><a href="#">Commercial</a>
+                      </li>
+                      <li><a href="#">Studio</a>
+                      </li>
+                      <li><a href="#">Reportages</a>
+                      </li>
+                      <li><a href="#">Corporate</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #3 -->
+                <!-- widget MENU #4 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">Studio</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="page-inner-services-1.html">Services</a>
+                      </li>
+                      <li><a href="page-inner-about-1.html">About</a>
+                      </li>
+                      <li><a href="blog-grid-2-columns.html">Blog</a>
+                      </li>
+                      <li><a href="page-inner-contacts-1.html">Contacts</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - widgets top area -->
+        <!-- widgets bottom area -->
+        <div class="footer__area footer__area-border-top pt-sm-3 pb-sm-1 pt-2 pb-0">
+          <div class="row align-items-center">
+            <!-- widget LOGO -->
+            <div class="col-lg-3 footer__column text-center text-lg-left order-lg-1">
+              <section class="widget widget_Once Upon A Time_logo">
+                <!-- content --><a class="logo" href="index.html">
+                  <div class="logo__wrapper-img">
+                    <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
+                      src="img/general/logo_green.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                    <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
+                      src="img/general/logo_light.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                  </div>
+                </a>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget LOGO -->
+            <!-- widget SOCIAL -->
+            <div class="col-lg-3 footer__column text-center text-lg-right order-lg-3">
+              <section class="widget widget_Once Upon A Time_social">
+                <!-- content -->
+                <ul class="social">
+                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                </ul>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget SOCIAL -->
+            <!-- widget TEXT -->
+            <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
+              <section class="widget widget_text">
+                <!-- content -->
+                <div class="textwidget">
+                  <p><small>Copyrights© 2025 Once Upon A Time Crafted by <a href="#" target="_blank">OUAT</a></small>
+                  </p>
+                </div>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget TEXT -->
+          </div>
+        </div>
+        <!-- - widgetst bottom area -->
+      </footer>
+      <!-- - PAGE FOOTER -->
+    </div>
+    <!-- - PAGE MAIN -->
+  </div>
+  <canvas id="js-webgl"></canvas>
+  <!-- PhotoSwipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+    <!-- background -->
+    <div class="pswp__bg"></div>
+    <!-- - background -->
+    <!-- slider wrapper -->
+    <div class="pswp__scroll-wrap">
+      <!-- slides holder (don't modify)-->
+      <div class="pswp__container">
+        <div class="pswp__item">
+          <div class="pswp__img pswp__img--placeholder"></div>
+        </div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <!-- - slides holder (don't modify)-->
+      <!-- UI -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <!-- top bar -->
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - top bar -->
+        <!-- left arrow -->
+        <div class="pswp__button pswp__button--arrow--left">
+          <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+            data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+            </svg>
+            <div class="arrow__pointer arrow-left__pointer"></div>
+            <div class="arrow__triangle"></div>
+          </div>
+        </div>
+        <!-- - left arrow -->
+        <!-- right arrow -->
+        <div class="pswp__button pswp__button--arrow--right">
+          <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+            </svg>
+            <div class="arrow__pointer arrow-right__pointer"></div>
+            <div class="arrow__triangle"></div>
+          </div>
+        </div>
+        <!-- - right arrow -->
+        <!-- slide caption holder (don't modify) -->
+        <div class="pswp__caption">
+          <div class="pswp__caption__center text-center"></div>
+        </div>
+        <!-- - slide caption holder (don't modify) -->
+      </div>
+      <!-- - UI -->
+    </div>
+    <!-- slider wrapper -->
+  </div>
+  <!-- - PhotoSwipe -->
+  <!-- List Hover Shaders -->
+  <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      
+      varying vec2 vUv;
+      
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"
+    intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      
+      varying vec2 vUv;
+      
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+      
+    </script>
+  <!-- - List Hover Shaders -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["PT Sans:400,400italic,700,700italic"]
+      }
+    });
+  </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+    ! function (o, c) {
+      var n = c.documentElement,
+        t = " w-mod-";
+      n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+    }(window, document);
+  </script>
+  <!-- Slider Textures Shaders -->
+  <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+  <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+    </script>
+  <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+      
+    </script>
+  <!-- - Slider Textures Shaders -->
+  <!-- VENDOR SCRIPTS -->
+  <script src="js/vendor.js"></script>
+  <!-- - VENDOR SCRIPTS -->
+  <!-- COMPONENTS -->
+  <script src="js/components.js"></script>
+  <!-- - COMPONENTS -->
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1").classList.toggle(active);
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
+    async></script>
+</body>
+
+</html>

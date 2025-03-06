@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cochin';
+    src: local('Cochin Regular'), local('Cochin-Regular'),
+        url('CochinLTStd.woff2') format('woff2'),
+        url('CochinLTStd.woff') format('woff'),
+        url('CochinLTStd.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
