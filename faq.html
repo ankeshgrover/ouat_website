@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Once Upon A Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="description" content="Once Upon A Time – AJAX Portfolio HTML5 Template" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
+  <!-- Template Vendor's Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+  <!-- Template Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- Favicons & App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/content/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/content/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="img/content/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/content/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/content/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/content/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/content/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicon-16x16.png" />
+  <link rel="manifest" href="img/content/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/x-icon" href="img/content/favicon.ico" />
+</head>
+
+<body>
+  <div data-barba="wrapper">
+    <!-- PAGE PRELOADER -->
+    <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
+      <div class="preloader__content">
+        <!-- header -->
+        <div class="preloader__header mt-auto">
+          <div class="preloader__heading h2"><img src="img/assets/project4/icon_logo.png" alt=""></div>
+          <div class="preloader__subline small-caps mt-1">Once Upon a Time</div>
+        </div>
+        <!-- - header -->
+        <!-- counter -->
+        <div class="preloader__counter h5"><span
+            class="preloader__counter-number preloader__counter-current">0</span><span
+            class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
+            class="preloader__counter-number preloader__counter-total">100</span></div>
+        <!-- - counter -->
+        <!-- circle holder -->
+        <div class="preloader__circle"></div>
+        <!-- - circle holder -->
+      </div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+    <!-- Loading Spinner -->
+    <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <!-- - Loading Spinner -->
+    <!-- Transition Curtain-->
+    <!-- TRANSITION CURTAINS -->
+    <!-- page curtain AJAX transition -->
+    <div class="curtain transition-curtain" id="js-page-transition-curtain">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - page curtain AJAX transition -->
+    <!-- header curtain show/hide -->
+    <div class="header-curtain curtain" id="js-header-curtain">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - header curtain show/hide -->
+    <!-- header curtain AJAX transition -->
+    <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
+      <div class="curtain__wrapper-svg">
+        <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Default Rectangle -->
+          <path class="curtain-svg__normal"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+          </path>
+          <!-- - Default Rectangle -->
+          <!-- Curve Top -->
+          <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+            d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+            d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+          </path>
+          <!-- - Curve Top -->
+          <!-- Curve Bottom -->
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+          </path>
+          <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+            d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+          </path>
+          <!-- - Curve Bottom -->
+        </svg>
+      </div>
+    </div>
+    <!-- - header curtain AJAX transition -->
+    <!-- - TRANSITION CURTAINS -->
+    <!-- Cursor Follower-->
+    <div class="cursor" id="js-cursor">
+      <div class="cursor__wrapper">
+        <!-- circles -->
+        <div class="cursor__follower">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
+            <circle id="outer" cx="25" cy="25" r="24"
+              style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+          </svg>
+        </div>
+        <!-- - circles -->
+        <!-- arrows -->
+        <div class="cursor__arrows">
+          <div class="cursor__arrow cursor__arrow_up material-icons">keyboard_arrow_up</div>
+          <div class="cursor__arrow cursor__arrow_down material-icons">keyboard_arrow_down</div>
+          <div class="cursor__arrow cursor__arrow_left material-icons">keyboard_arrow_left</div>
+          <div class="cursor__arrow cursor__arrow_right material-icons">keyboard_arrow_right</div>
+        </div>
+        <!-- - arrows -->
+        <!-- label holder -->
+        <div class="cursor__label"></div>
+        <!-- - label holder -->
+        <!-- icon holder -->
+        <div class="cursor__icon material-icons"></div>
+        <!-- - icon holder -->
+      </div>
+    </div>
+    <!-- - Cursor Follower-->
+    <!-- PAGE HEADER -->
+    <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
+      data-arts-theme-text="dark" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary"
+      data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
+      data-arts-header-overlay-background="#ffffff">
+      <!-- top bar -->
+      <div class="header__container header__controls">
+        <div class="row justify-content-between align-items-center">
+          <!-- logo -->
+          <div class="col-auto header__col header__col-left"><a class="logo" href="index.html">
+              <div class="logo__wrapper-img">
+                <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
+                  src="img/general/logo_green.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
+                  src="img/general/logo_light.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+              </div>
+            </a>
+          </div>
+          <!-- - logo -->
+          <!-- burger icon -->
+          <div class="col-auto header__col">
+            <div class="header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+          </div>
+          <!-- - burger icon -->
+          <!-- "back" button for submenu nav -->
+          <div class="header__overlay-menu-back" id="js-submenu-back">
+            <div class="arrow arrow-left js-arrow arrow_mini" data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+              <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+              </svg>
+              <div class="arrow__pointer arrow-left__pointer"></div>
+              <div class="arrow__triangle"></div>
+            </div>
+          </div>
+          <!-- - "back" button for submenu nav -->
+        </div>
+      </div>
+      <!-- - top bar -->
+      <!-- fullscreen overlay container -->
+      <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
+        <!-- fullscreen menu -->
+        <div class="header__wrapper-menu mt-0">
+          <ul class="menu-overlay js-menu-overlay">
+            <li class="menu-item-has-children"><a class="h2" href="page-inner-about-2.html"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="page-inner-contacts-1.html"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Contact Us
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- - fullscreen menu -->
+        <!-- fullscreen widgets -->
+        <div class="header__wrapper-overlay-widgets">
+          <div class="row">
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">
+                Contacts</div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p><a href="onceuponatime@example.com">onceuponatime@example.com</a><br />+1 859-795-9217<br />+1
+                  716-913-6279<br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Office
+              </div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p>4903 Mayo Street<br />Cincinnati, KY 45202<br />USA<br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+            <!-- widget TEXT -->
+            <div class="col-lg-4 header__widget">
+              <div class="header__widget-title small-caps js-split-text split-text" data-split-text-type="lines">Want to
+                Work with Me?</div>
+              <div class="header__widget-content js-split-text split-text" data-split-text-type="lines">
+                <p><a href="page-inner-contacts-1.html">Get in Touch</a><br />
+                </p>
+              </div>
+            </div>
+            <!-- - widget TEXT -->
+          </div>
+        </div>
+        <!-- - fullscreen widgets -->
+      </div>
+      <!-- - fullscreen overlay container -->
+    </header>
+    <!-- - PAGE HEADER -->
+    <!-- PAGE MAIN -->
+    <div class="js-smooth-scroll" id="page-wrapper" data-barba="container">
+      <main class="page-wrapper__content">
+        <!-- Header -->
+        <section class="section section-masthead pt-medium pb-medium text-center bg-neutral-2"
+          data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+          <div class="section-masthead__inner container-fluid">
+            <header class="row section-masthead__header justify-content-center">
+              <div class="col">
+                <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                  data-split-text-type="lines,words" data-split-text-set="words"><span>OUAT</span></div>
+                <div class="w-100"></div>
+                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                  data-split-text-set="words">
+                  <h2 class="h2 mt-0 mb-0">Frequently Asked Questions <br> (FAQs)</h2>
+                </div>
+                <div class="w-100"></div>
+                <div class="section__headline mt-2 mx-auto"></div>
+              </div>
+            </header>
+          </div>
+
+        </section>
+        <!-- Header -->
+        <!-- Getting Started & General Information -->
+        <div class="section">
+          <section class="section section-masthead pt-small  text-center"
+            data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+            <div class="section-masthead__inner container-fluid">
+              <header class="row section-masthead__header justify-content-center">
+                <div class="col">
+                  <div class="w-100"></div>
+                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h3 class="h3 mt-0 mb-0 text-center">Getting Started & General Information</h3>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section__headline mt-2 mx-auto"></div>
+                </div>
+              </header>
+            </div>
+
+          </section>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is "Once Upon a
+                    Time"?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Once Upon a Time" is a service that helps families capture and preserve their cherished memories by
+                    transforming them into beautifully crafted legacy storybooks. We guide you through the process of
+                    gathering stories, and then weave them into a timeless keepsake which is a hard-bound book. An
+                    audiobook in the writer's voice is also available at an additional cost (Coming soon)</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Who is "Once Upon a
+                    Time" for?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>"Once Upon a Time" is for anyone who values preserving life's precious moments. While it's
+                    especially popular with parents and grandparents who wish to share their wisdom, and with children
+                    and grandchildren who yearn to connect with their roots, we're also expanding our offerings to cater
+                    to a variety of other storytelling needs. Coming soon, we will offer specific categories for those
+                    who wish to: <br>
+                    <b>Share their professional journey:</b> Capture the milestones, challenges, and triumphs of a
+                    career. <br>
+                    <b>Preserve shared love stories:</b> Document the unique journey of a couple, from first meeting to
+                    enduring partnership.<br>
+                    <b>Capture children's key milestones and funny moments:</b> Create a lasting record of childhood's
+                    fleeting joys and humorous anecdotes.<br>
+                    <b>Share memories for a joint celebration:</b> Compile stories for anniversaries, birthdays,
+                    reunions, and other special occasions.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can I customize the
+                    prompts?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Yes! Our user-friendly platform allows you to edit existing prompts or create your own, ensuring
+                    the storytelling process is tailored to your family's unique needs.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Is the platform easy
+                    to use for people who aren't tech-savvy?</span><span class="icon"
+                    aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Absolutely. We've designed our platform with simplicity in mind. It features easy navigation,
+                    customizable frequency settings, prompt notifications, and a voice-to-text option to make capturing
+                    stories effortless.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What types of
+                    stories can be included in the book?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Any stories that are meaningful to your family! This could include childhood memories, life
+                    lessons, family traditions, personal achievements, or simply everyday moments that hold special
+                    significance.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What makes "Once
+                    Upon a Time" different from other memory preservation services?</span><span class="icon"
+                    aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We combine cutting-edge technology with heartfelt storytelling and exquisite design. Our guided
+                    storytelling process, customizable prompts, and user-friendly platform make capturing and preserving
+                    memories an engaging and meaningful experience. We focus on creating a true heirloom, not just a
+                    printed book.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How long does the
+                    process take?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>The timeline is flexible and depends on the frequency of prompts you choose. It can range from a
+                    few months to a year, allowing you to capture stories at a comfortable pace.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What kind of book
+                    quality can I expect?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We are committed to producing high-quality, durable books that will last for generations. We use
+                    premium materials and professional printing to ensure your keepsake is both beautiful and
+                    long-lasting.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do I get
+                    started?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Simply visit our website and sign up! We'll guide you through the process and help you begin
+                    capturing your family's precious stories. Click here to get started</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How much does this
+                    cost? Can I purchase extra books?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Pricing varies by different package options. Yes, you can always purchase extra books at a cost
+                    irresepective of the package</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Where do you ship
+                    to?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We ship our books worldwide. Please see our shipping policy on our website for a list of specific
+                    locations and any associated fees.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What is your
+                    approach to privacy? Are my stories safe?</span><span class="icon"
+                    aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We take your privacy seriously. Your stories are stored securely and protected with robust
+                    encryption.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Who has access to
+                    stories?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Only you and those you explicitly grant permission to will have access to your stories.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Storytelling & Content Creation -->
+        <div class="section">
+          <section class="section section-masthead pt-small  text-center"
+            data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+            <div class="section-masthead__inner container-fluid">
+              <header class="row section-masthead__header justify-content-center">
+                <div class="col">
+                  <div class="w-100"></div>
+                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h3 class="h3 mt-0 mb-0 text-center">Storytelling & Content Creation</h3>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section__headline mt-2 mx-auto"></div>
+                </div>
+              </header>
+            </div>
+
+          </section>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How does the guided storytelling process work?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We provide thoughtful, scheduled prompts designed to spark memories and encourage storytelling. You can customize the frequency of these prompts—weekly, bi-weekly, monthly, or all at once—to suit your loved one's pace and preferences. Our platform makes it easy to manage and edit these prompts.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can I add my own questions?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Yes! Our user-friendly platform allows you to edit existing prompts or create your own, ensuring the storytelling process is tailored to your family's unique needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I write and submit stories?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>You can write and submit stories directly through our online platform, using either text or our voice-to-text feature.</p>
+                </div>
+              </div>
+            </div>
+         
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I edit and preview stories?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Our platform provides easy-to-use editing tools, and you can preview your stories at any time before finalizing your book.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can I write on someone's behalf?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Yes, with their permission. Our platform allows you to contribute stories on behalf of others.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I add photos and captions?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>You can easily upload photos and add captions directly through our platform.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I edit my photo(s)?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Our platform includes basic photo editing tools, allowing you to crop, adjust, and enhance your images.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are the formats and limits for photos?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>We accept common image formats like JPEG and PNG. Specific size and resolution requirements are available on our website.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I add, remove, or customize upcoming questions?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>You can manage your upcoming questions through your account settings, where you can add, remove, and customize them as needed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I update my question frequency?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>You can adjust your question frequency in your account settings.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I access missed questions?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Missed questions can be accessed and answered through your account dashboard.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Book Design & Customization -->
+        <div class="section">
+          <section class="section section-masthead pt-small  text-center"
+            data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+            <div class="section-masthead__inner container-fluid">
+              <header class="row section-masthead__header justify-content-center">
+                <div class="col">
+                  <div class="w-100"></div>
+                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h3 class="h3 mt-0 mb-0 text-center">Book Design & Customization</h3>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section__headline mt-2 mx-auto"></div>
+                </div>
+              </header>
+            </div>
+
+          </section>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">What do the books look like? Can I customize the cover?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Our books are beautifully crafted with premium materials. You can customize the cover with your own photos and text.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I design my book cover?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Our platform provides intuitive tools to design your book cover </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I preview the pages of my book interior?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>You can preview all the pages of your book interior before placing your order.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">Which languages are available for your books?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Currently we support English, and are expanding to include more languages in the future.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Account & Subscription Management -->
+        <div class="section">
+          <section class="section section-masthead pt-small  text-center"
+            data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+            <div class="section-masthead__inner container-fluid">
+              <header class="row section-masthead__header justify-content-center">
+                <div class="col">
+                  <div class="w-100"></div>
+                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h3 class="h3 mt-0 mb-0 text-center">Account & Subscription Management</h3>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section__headline mt-2 mx-auto"></div>
+                </div>
+              </header>
+            </div>
+
+          </section>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">When does my subscription end? What happens next?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Your subscription end date is displayed in your account settings. You'll receive a reminder before your subscription ends.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I pause a subscription?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>You can pause your notifications for a period of time through your account settings that said, the subscription itself can't be paused</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I renew a subscription?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>You can renew your subscription through your account settings.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How do I remind people to write?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Our platform provides automated reminders, and you can also send personalized reminders through your account.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- AI Based Story Generation -->
+        <div class="section">
+          <section class="section section-masthead pt-small  text-center"
+            data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-3)">
+            <div class="section-masthead__inner container-fluid">
+              <header class="row section-masthead__header justify-content-center">
+                <div class="col">
+                  <div class="w-100"></div>
+                  <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
+                    data-split-text-set="words">
+                    <h3 class="h3 mt-0 mb-0 text-center">AI Based Story Generation</h3>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="section__headline mt-2 mx-auto"></div>
+                </div>
+              </header>
+            </div>
+
+          </section>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">How does AI based story generation work</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>AI based story generation work</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- PAGE FOOTER -->
+      <footer class="footer container-fluid" id="page-footer" data-arts-theme-text="dark"
+        data-arts-footer-logo="primary">
+        <!-- widgets top area -->
+        <div class="footer__area pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0 footer__area-border-top">
+          <div class="row">
+            <!-- call to action -->
+            <div class="col-lg-5">
+              <section class="widget widget_Once Upon A Time_cta">
+                <!-- header -->
+                <h2 class="h2 mt-0 mb-0-5">Ready to Capture the Moments?</h2>
+                <!-- - header -->
+                <!-- button --><a class="button button_solid button_black mb-0-5" data-hover="Get in Touch"
+                  href="page-inner-contacts-1.html"><span class="button__label-hover">Get in Touch</span></a>
+                <!-- - button -->
+              </section>
+            </div>
+            <!-- - call to action -->
+            <div class="col-lg-7">
+              <div class="row justify-content-lg-between">
+                <!-- widget MENU #1 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">2020' Works</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="project-details-1-fullscreen-center.html">Nordic Adventure</a>
+                      </li>
+                      <li><a href="project-details-2-bottom-center.html">Sunrise in Desert</a>
+                      </li>
+                      <li><a href="project-details-3-halfscreen-left-right.html">Cassio Apartment</a>
+                      </li>
+                      <li><a href="project-details-4-halfscreen-left-left.html">Nothern Wave</a>
+                      </li>
+                      <li><a href="project-details-5-bottom-container-center.html">On the Edge</a>
+                      </li>
+                      <li><a href="project-details-6-bottom-fullwidth.html">Paysage Fiction</a>
+                      </li>
+                      <li><a href="project-details-7-fullscreen-left.html">Silence &amp; Noise</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #1 -->
+                <!-- widget MENU #2 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">2019' Works</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="project-details-8-halfscreen-right-left.html">Minimalex Cosmetics</a>
+                      </li>
+                      <li><a href="project-details-9-fullscreen-center.html">La Isla Bonita</a>
+                      </li>
+                      <li><a href="project-details-10-halfscreen-left-right.html">Kinsey Premium Furniture</a>
+                      </li>
+                      <li><a href="project-details-11-fullscreen-center.html">Dancing in the Dark</a>
+                      </li>
+                      <li><a href="project-details-12-bottom-container-center.html">The Silent Listener</a>
+                      </li>
+                      <li><a href="project-details-13-bottom-container-center.html">Arrigo Casual Accessories</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #2 -->
+                <!-- widget MENU #3 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">Services</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="#">Weddings</a>
+                      </li>
+                      <li><a href="#">Portraits</a>
+                      </li>
+                      <li><a href="#">Commercial</a>
+                      </li>
+                      <li><a href="#">Studio</a>
+                      </li>
+                      <li><a href="#">Reportages</a>
+                      </li>
+                      <li><a href="#">Corporate</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #3 -->
+                <!-- widget MENU #4 -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                  <section class="widget widget_nav_menu">
+                    <!-- header -->
+                    <h2 class="widgettitle">Studio</h2>
+                    <!-- - header -->
+                    <!-- content -->
+                    <ul class="menu js-menu">
+                      <li><a href="page-inner-services-1.html">Services</a>
+                      </li>
+                      <li><a href="page-inner-about-1.html">About</a>
+                      </li>
+                      <li><a href="blog-grid-2-columns.html">Blog</a>
+                      </li>
+                      <li><a href="page-inner-contacts-1.html">Contacts</a>
+                      </li>
+                    </ul>
+                    <!-- - content -->
+                  </section>
+                </div>
+                <!-- - widget MENU #4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - widgets top area -->
+        <!-- widgets bottom area -->
+        <div class="footer__area footer__area-border-top pt-sm-3 pb-sm-1 pt-2 pb-0">
+          <div class="row align-items-center">
+            <!-- widget LOGO -->
+            <div class="col-lg-3 footer__column text-center text-lg-left order-lg-1">
+              <section class="widget widget_Once Upon A Time_logo">
+                <!-- content --><a class="logo" href="index.html">
+                  <div class="logo__wrapper-img">
+                    <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary"
+                      src="img/general/logo_green.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                    <!-- secondary logo version (for dark backgrounds)--><img class="logo__img-secondary"
+                      src="img/general/logo_light.svg" alt="Once Upon A Time HTML5 Template" height="20" />
+                  </div>
+                </a>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget LOGO -->
+            <!-- widget SOCIAL -->
+            <div class="col-lg-3 footer__column text-center text-lg-right order-lg-3">
+              <section class="widget widget_Once Upon A Time_social">
+                <!-- content -->
+                <ul class="social">
+                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                </ul>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget SOCIAL -->
+            <!-- widget TEXT -->
+            <div class="col-lg-6 footer__column text-center text-lg-center order-lg-2">
+              <section class="widget widget_text">
+                <!-- content -->
+                <div class="textwidget">
+                  <p><small>Copyrights© 2025 Once Upon A Time Crafted by <a href="#" target="_blank">OUAT</a></small>
+                  </p>
+                </div>
+                <!-- - content -->
+              </section>
+            </div>
+            <!-- - widget TEXT -->
+          </div>
+        </div>
+        <!-- - widgetst bottom area -->
+      </footer>
+      <!-- - PAGE FOOTER -->
+    </div>
+    <!-- - PAGE MAIN -->
+  </div>
+  <canvas id="js-webgl"></canvas>
+  <!-- PhotoSwipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-arts-theme-text="light">
+    <!-- background -->
+    <div class="pswp__bg"></div>
+    <!-- - background -->
+    <!-- slider wrapper -->
+    <div class="pswp__scroll-wrap">
+      <!-- slides holder (don't modify)-->
+      <div class="pswp__container">
+        <div class="pswp__item">
+          <div class="pswp__img pswp__img--placeholder"></div>
+        </div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <!-- - slides holder (don't modify)-->
+      <!-- UI -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <!-- top bar -->
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - top bar -->
+        <!-- left arrow -->
+        <div class="pswp__button pswp__button--arrow--left">
+          <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+            data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+            </svg>
+            <div class="arrow__pointer arrow-left__pointer"></div>
+            <div class="arrow__triangle"></div>
+          </div>
+        </div>
+        <!-- - left arrow -->
+        <!-- right arrow -->
+        <div class="pswp__button pswp__button--arrow--right">
+          <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
+            </svg>
+            <div class="arrow__pointer arrow-right__pointer"></div>
+            <div class="arrow__triangle"></div>
+          </div>
+        </div>
+        <!-- - right arrow -->
+        <!-- slide caption holder (don't modify) -->
+        <div class="pswp__caption">
+          <div class="pswp__caption__center text-center"></div>
+        </div>
+        <!-- - slide caption holder (don't modify) -->
+      </div>
+      <!-- - UI -->
+    </div>
+    <!-- slider wrapper -->
+  </div>
+  <!-- - PhotoSwipe -->
+  <!-- List Hover Shaders -->
+  <script id="list-hover-vs" type="x-shader/x-vertex">
+      uniform vec2 uOffset;
+      
+      varying vec2 vUv;
+      
+      vec3 deformationCurve(vec3 position, vec2 uv, vec2 offset) {
+        float M_PI = 3.1415926535897932384626433832795;
+        position.x = position.x + (sin(uv.y * M_PI) * offset.x);
+        position.y = position.y + (sin(uv.x * M_PI) * offset.y);
+        return position;
+      }
+      
+      void main() {
+        vUv =  uv + (uOffset * 2.);
+        vec3 newPosition = position;
+        newPosition = deformationCurve(position,uv,uOffset);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+      }
+    </script>
+  <script id="list-hover-fs" type="x-shader/x-fragment">
+      uniform sampler2D uTexture;
+      uniform float uAlpha;
+      uniform float uScale;
+      
+      varying vec2 vUv;
+      
+      vec2 scaleUV(vec2 uv,float scale) {
+        float center = 0.5;
+        return ((uv - center) * scale) + center;
+      }
+      
+      void main() {
+        vec3 color = texture2D(uTexture,scaleUV(vUv,uScale)).rgb;
+        gl_FragColor = vec4(color,uAlpha);
+      }
+      
+    </script>
+  <!-- - List Hover Shaders -->
+  <!-- Slider Textures Shaders -->
+  <script id="slider-textures-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+  <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+        vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+    </script>
+  <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
+      varying vec2 vUv;
+      
+      uniform sampler2D texture;
+      uniform sampler2D texture2;
+      uniform sampler2D disp;
+      
+      uniform float dispFactor;
+      uniform float effectFactor;
+      
+      void main() {
+      
+        vec2 uv = vUv;
+      
+        vec4 disp = texture2D(disp, uv);
+      
+        vec2 distortedPosition = vec2(uv.x, uv.y - dispFactor * (disp.r*effectFactor));
+        vec2 distortedPosition2 = vec2(uv.x, uv.y + (1.0 - dispFactor) * (disp.r*effectFactor));
+      
+        vec4 _texture = texture2D(texture, distortedPosition);
+        vec4 _texture2 = texture2D(texture2, distortedPosition2);
+      
+        vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      
+        gl_FragColor = finalTexture;
+      
+      }
+      
+    </script>
+  <!-- - Slider Textures Shaders -->
+  <!-- VENDOR SCRIPTS -->
+  <script src="js/vendor.js"></script>
+  <!-- - VENDOR SCRIPTS -->
+  <!-- COMPONENTS -->
+  <script src="js/components.js"></script>
+  <!-- - COMPONENTS -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
+    async></script>
+</body>
+
+</html>
