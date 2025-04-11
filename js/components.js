@@ -9656,15 +9656,15 @@ function syncAttributes($sourceElement, $targetElement) {
 
 
 })(jQuery);
-// Modal--------------------------------------------------------------------------------
+// Modal Stories--------------------------------------------------------------------------------
 const popups = [
-	{ title: "First Steps", description: "The beginning of my journey, filled with curiosity, laughter, and tiny steps toward a world of endless possibilities.", images: ["../img/assets/timeline/img1_1.png", "../img/assets/timeline/img2_1.png", "../img/assets/timeline/img3_1.png"] },
+	{ title: "First Steps", description: "I was born on January 10th, 1953, in Munnar, Kerala, South India. It's one of the most beautiful places on earth, often called God's own country. I was the fifth child in a family of seven – five boys and two girls. Being the fifth, I imagine there wasn't much excitement or fanfare around my arrival. Just one more added to the family, I guess. At that time, there was no electricity, telephone, or television. My parents tell me the refrigerator ran on kerosene. The climate was very cold and misty. Newspapers arrived every 2 or 3 days. For communication, we relied on occasional letters or, in emergencies, telegrams. And thus began the humble beginnings of my story!", images: ["../img/assets/timeline/img1_1.png", "../img/assets/timeline/img2_1.png", "../img/assets/timeline/img3_1.png"] },
 
-	{ title: "Childhood Adventures", description: "I was born on January 10th, 1953, in Munnar, Kerala, South India. It's one of the most beautiful places on earth, often called God's own country. I was the fifth child in a family of seven – five boys and two girls. Being the fifth, I imagine there wasn't much excitement or fanfare around my arrival. Just one more added to the family, I guess. At that time, there was no electricity, telephone, or television. My parents tell me the refrigerator ran on kerosene. The climate was very cold and misty. Newspapers arrived every 2 or 3 days. For communication, we relied on occasional letters or, in emergencies, telegrams. <br> And thus began the humble beginnings of my story!", images: ["../img/assets/timeline/img1_2.png", "../img/assets/timeline/img2_2.png", "../img/assets/timeline/img3_2.png"] },
+	{ title: "Childhood Adventures", description: "As a child, I liked science and math the most. Geography, however, was not my cup of tea. I always struggled with maps and remembering routes. To this day, my geography is very weak. I can’t remember directions! Science and math were my favorites, but I wasn’t a sports person. I did participate in co-curricular activities like drama. I remember playing the role of a queen in a historical drama and also a role in Panna Dhai, along with smaller parts in other plays. Dance and music, though, were not for me. Dance especially was, and still is, not my cup of tea.", images: ["../img/assets/timeline/img1_2.png", "../img/assets/timeline/img2_2.png", "../img/assets/timeline/img3_2.png"] },
 
-	{ title: "School Days", description: "From learning my ABCs to making my first best friends, these were the years of growth, mischief, and lessons that shaped who I am today.", images: ["../img/assets/timeline/img1_3.png", "../img/assets/timeline/img2_3.png", "../img/assets/timeline/img3_3.png"] },
+	{ title: "School Days", description: "There was no single aha moment that sparked my interest in teaching. No inspiring figure in my family, no transformative classroom experience. Instead, it seemed to blossom from a simple, innate curiosity. I was drawn to the world of children, fascinated by their unbridled energy and eager minds. My earliest memories of this budding interest involve observing toddlers—watching them explore their world with a kind of untamed wonder that both amused and intrigued me. Perhaps it was this fascination that prompted me to consider a Bachelor of Education (BEd) degree. It felt like the “safest side,” a practical choice should I ever decide to join the workforce. This was after my postgraduate studies, mind you! Before that, my teenage self had quite different aspirations.", images: ["../img/assets/timeline/img1_3.png", "../img/assets/timeline/img2_3.png", "../img/assets/timeline/img3_3.png"] },
 
-	{ title: "Teenage Dreams", description: "The years of self-discovery, chasing dreams, and figuring out my place in the world—filled with unforgettable moments, challenges, and newfound independence.", images: ["../img/assets/timeline/img1_4.png", "../img/assets/timeline/img2_4.png", "../img/assets/timeline/img3_4.png"] },
+	{ title: "Teenage Dreams", description: "It was only when I held my son, in my arms for the first time that the true depths of motherhood washed over me. That overwhelming surge of love, fierce and protective – it was unlike anything I'd ever experienced. My daughter, followed two years later, and our family was complete. Raising children while working and navigating the complexities of a joint family had its challenges. There were times when I yearned for a deeper understanding from my in-laws, especially when juggling work and home life became overwhelming. They were incredibly supportive, of course, always there to lend a hand with the children. But there were moments, fleeting yet poignant, where I craved acknowledgment of my struggles, a recognition of the unique pressures I faced as a working mother in our family.", images: ["../img/assets/timeline/img1_4.png", "../img/assets/timeline/img2_4.png", "../img/assets/timeline/img3_4.png"] },
 
 	{ title: "College Chronicle", description: "Late-night study sessions, lifelong friendships, and moments of self-growth—where I learned not just from books, but from experiences that shaped my future.", images: ["../img/assets/timeline/img1_5.png", "../img/assets/timeline/img2_5.png", "../img/assets/timeline/img3_5.png"] },
 
@@ -9680,42 +9680,57 @@ const popups = [
 	{ title: "Present & Future", description: "Reflecting on the journey so far with gratitude, embracing the present with joy, and looking ahead with excitement for all that is yet to come.", images: ["../img/assets/timeline/img1_10.png", "../img/assets/timeline/img2_10.png", "../img/assets/timeline/img3_10.png"] }
 ];
 
+let typingInterval;
 
-function showPopup(index) {
-	document.body.style.overflow = "hidden"; // Stop scrolling
-	const popup = document.getElementById("popup");
-	document.getElementById("popup-title").innerText = popups[index].title;
-	typeText("popup-description", popups[index].description);
-	const imagesContainer = document.getElementById("popup-images");
-	imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
-	popup.classList.add("show");
-	popup.style.display = "block";
-}
+        function showPopup(index) {
+            document.body.style.overflow = "hidden";
+            const popup = document.getElementById("popup");
+            document.getElementById("popup-title").innerText = popups[index].title;
+            const imagesContainer = document.getElementById("popup-images");
+            imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
+            popup.classList.add("show");
+            popup.style.display = "block";
+            clearInterval(typingInterval);
+            typeText("popup-description", popups[index].description);
+        }
 
-function closePopup() {
-	document.body.style.overflow = "auto"; // Re-enable scrolling
-	document.getElementById("popup").style.display = "none";
-	popup.classList.remove("show");
+        function closePopup() {
+            document.body.style.overflow = "auto";
+            const popup = document.getElementById("popup");
+            popup.classList.remove("show");
             setTimeout(() => { popup.style.display = "none"; }, 300);
-}
+            clearInterval(typingInterval);
+        }
 
-function typeText(elementId, text) {
-	const element = document.getElementById(elementId);
-	element.innerHTML = ""; // Clear previous text
-	text.split("").forEach((char, index) => {
-		let span = document.createElement("span");
-		span.textContent = char;
-		span.classList.add("letter");
-		span.style.transitionDelay = `${index * 10}ms`; // Smooth delay per letter
-		element.appendChild(span);
-		setTimeout(() => {
-			span.style.opacity = "1";
-			span.style.transform = "translateY(0)";
-		}, index * 10);
-	});
-}
+        function typeText(elementId, text) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = "";
+            let i = 0;
+            typingInterval = setInterval(() => {
+                element.innerHTML = text.slice(0, i + 1);
+                element.scrollTop = element.scrollHeight;
+                i++;
+                if (i === text.length) clearInterval(typingInterval);
+            }, 40);
+        }
 
+		const scrollDiv = document.getElementById('scrollTarget');
 
+		scrollDiv.addEventListener('wheel', function (e) {
+		  // Prevent vertical scroll
+		  e.preventDefault();
+		  // Scroll horizontally
+		  scrollDiv.scrollLeft += e.deltaY;
+		}, { passive: false });
+		 function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.body.classList.add("popup-open"); // Disable background scroll
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.body.classList.remove("popup-open"); // Re-enable background scroll
+        }
 // Faq----------------
 const items = document.querySelectorAll(".accordion button");
 
