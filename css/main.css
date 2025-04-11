@@ -12905,31 +12905,37 @@ p.card-text {
   padding: 1rem;
   width: 40rem;
   height: 25rem;
-  border-radius: 0.5rem;
+  border-radius: 00;
 }
 
 .model-wrapper {
+  background-image: url("../img/general/stories-timline-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   width: 100%;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   color: #333333;
   height: 100%;
   justify-content: space-between;
 }
 
 .left-content {
+  text-align: justify;
   padding: 1rem;
   width: 60%;
-  background: #E5E1C7;
-  border-radius: .6rem 0 0 .6rem;
+  /* background: #E5E1C7; */
+  /* border-radius: .6rem 0 0 .6rem; */
   line-height: 1.1;
     letter-spacing: -1px;
     height: inherit;
+    
 }
 
 .right-image img {
   margin: 8px 0;
-  border-radius: 1rem;
+  border-radius: 0;
   box-shadow: 0px 8px 10px 1px #00000070;
 }
 
@@ -12938,12 +12944,12 @@ p.card-text {
   overflow-y: scroll;
   padding: 1rem;
   width: 40%;
-  background: #E5E1C7;
-  border-radius: 0 .6rem .6rem 0;
+  /* background: #E5E1C7; */
+  /* border-radius: 0 .6rem .6rem 0; */
 }
 
 #popup-title {
-  color: #8E4F24 !important;
+  color: #22544E !important;
   /* font-family: 'Cochin'; */
   /* font-family:'EngraversGothiDates';
   font-family:Falidasi; */
@@ -12990,25 +12996,7 @@ p.card-text {
   transition: opacity 0.1s ease-out, transform 0.1s ease-out;
 }
 
-/* #body{
-  font-family: 'Cochin', serif;
-  color: #262626!important;
-  font-size: 1.5rem;
-  margin: 0;
-  
-}
-#handwritten_notes{
-  font-family:'Falidasi' , serif;
-  color: #262626!important;
-  font-size: 1.5rem;
-  margin: 0;
-}
-#dates{
-  font-family:'EngraversGothic BT' , serif;
-  color: #262626!important;
-  font-size: 1.5rem;
-  margin: 0;
-} */
+
 
 .close-button {
   position: absolute;
@@ -13061,7 +13049,7 @@ p.card-text {
 .popup {
   z-index: 99;
   display: none;
-  background: #B2986B;
+  background: #b2986b00;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 6px;
 }
