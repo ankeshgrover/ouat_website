@@ -13337,5 +13337,13 @@ p.card-text {
   text-align: center;
   color: #22544E;
   font-size: .8rem;
-
+}
+@media screen and (max-width: 600px) {
+  .figure-service__wrapper-bg{
+width: auto;
+  }
+  .back-video{
+    height: 100vh;
+    width: fit-content;
+  }
 }
