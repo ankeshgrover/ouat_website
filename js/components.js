@@ -9682,7 +9682,7 @@ let typingInterval;
 
         function showPopup(index) {
             document.body.style.overflow = "hidden";
-            const popup = document.getElementById("popup");
+            const popup = document.getElementById("stories_popup");
             document.getElementById("popup-title").innerText = popups[index].title;
             const imagesContainer = document.getElementById("popup-images");
             imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
@@ -9694,7 +9694,7 @@ let typingInterval;
 
         function closePopup() {
             document.body.style.overflow = "auto";
-            const popup = document.getElementById("popup");
+            const popup = document.getElementById("stories_popup");
             popup.classList.remove("show");
             setTimeout(() => { popup.style.display = "none"; }, 300);
             clearInterval(typingInterval);
@@ -9712,23 +9712,56 @@ let typingInterval;
             }, 20);
         }
 
-		const scrollDiv = document.getElementById('scrollTarget');
+// Modal Scroll--------------------------------------Start
+const viewButtons = document.querySelectorAll('.view-button');
+const carousel = document.querySelector('.cards-wrapper');
+const modal = document.getElementById('stories_popup');
+const closeModal = document.getElementById('closeModal');
 
-		scrollDiv.addEventListener('wheel', function (e) {
-		  // Prevent vertical scroll
-		  e.preventDefault();
-		  // Scroll horizontally
-		  scrollDiv.scrollLeft += e.deltaY;
-		}, { passive: false });
-		 function openPopup() {
-            document.getElementById("popup").style.display = "block";
-            document.body.classList.add("popup-open"); // Disable background scroll
-        }
+let isModalOpen = false;
 
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-            document.body.classList.remove("popup-open"); // Re-enable background scroll
-        }
+function stopScroll() {
+  carousel.style.animationPlayState = 'paused';
+}
+
+function startScroll() {
+  carousel.style.animation = 'none';
+  carousel.offsetHeight; // force reflow
+  carousel.style.animation = 'scroll 10s linear infinite';
+  carousel.style.animationPlayState = 'running';
+}
+
+viewButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+	e.preventDefault();
+	isModalOpen = true;
+	stopScroll();
+	modal.style.display = 'flex';
+  });
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+  isModalOpen = false;
+  startScroll();
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+	modal.style.display = 'none';
+	isModalOpen = false;
+	startScroll();
+  }
+});
+
+carousel.addEventListener('mouseenter', () => {
+  if (!isModalOpen) stopScroll();
+});
+
+carousel.addEventListener('mouseleave', () => {
+  if (!isModalOpen) carousel.style.animationPlayState = 'running';
+});
+// Modal Scroll--------------------------------------End
 // Faq----------------
 const items = document.querySelectorAll(".accordion button");
 
