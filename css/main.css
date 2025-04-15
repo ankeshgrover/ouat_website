@@ -13412,7 +13412,7 @@ p.card-text {
   color: #fff;
   backdrop-filter: blur(8px);
   background-color: #00000054;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   bottom: 16px;
   right: 16px;
