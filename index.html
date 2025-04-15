@@ -40,6 +40,7 @@
 </head>
 
 <body>
+  <a href="product-list.html" class="fab-buy-now-btn button_solid">Buy Now</a>
   <div data-barba="wrapper">
     <!-- PAGE PRELOADER -->
     <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
@@ -241,13 +242,43 @@
         <!-- fullscreen menu -->
         <div class="header__wrapper-menu mt-0">
           <ul class="menu-overlay js-menu-overlay">
-            <li class="menu-item-has-children"><a class="h2" href="page-inner-about-2.html"
+            <li class="menu-item-has-children"><a class="h2" href="#wsm"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Why Stories Matters?
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="#ourproducts"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Products
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="#hiw"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">How it works
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="#faqs"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">FAQs
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="#reviews"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Customer Reviews
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="aboutus.html"
                 data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About Us
                 </div>
               </a>
             </li>
-            <li class="menu-item-has-children"><a class="h2" href="page-inner-contacts-1.html"
+            <li class="menu-item-has-children"><a class="h2" href="#contact_us"
                 data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Contact Us
                 </div>
@@ -300,6 +331,7 @@
     <!-- PAGE MAIN -->
     <div class="js-smooth-scroll bg-light-1" id="page-wrapper" data-barba="container">
       <main class="page-wrapper__content" style="background-color: #fff;">
+       
         <!-- section MASTHEAD FULLSCREEN -->
         <section class="section section-masthead section-fullheight text-center"
           data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark"
@@ -314,7 +346,7 @@
                 <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
                   data-split-text-set="words">
                   <img src="img/general/icon_logo.png" alt="">
-                  <!-- <h1 class="h1 mt-0 mb-0" style="color: #fff;">Once Upon A time</h1> -->
+                  <h1 class="h1 mt-0 mb-0" style="color: #fff;">Once Upon A time</h1>
                 </div>
                 <h4 class="text-white h4 cochin-font">Preserving life’s most treasured moments <br> in beautifully crafted legacy books.</h4>
                 <!-- <div class="w-100"> <img src="img/general/tag_line.svg" alt=""></div> -->
@@ -426,10 +458,8 @@
                       <div class="w-100"></div>
                       <div class="section-content__text split-text js-split-text mt-1 " data-split-text-type="lines"
                         data-split-text-set="lines">
-                        <p class="text-primary">We transform life's essence—memoirs, milestones, and cherished
-                          memories—into enduring lifebooks. Using technology and the art of storytelling, including
-                          guided prompts and AI assistance, we capture the laughter, wisdom, and unique journeys that
-                          shape a life, creating resonant treasures for anyone, for generations.</p>
+                        <p class="text-primary">Imagine a world where everyone’s story is treasured, we are making that a reality with Once Upon a Time - a revolutionary service that transforms cherished memories into beautiful legacy storybooks.</p>
+                         <b class="text-primary"><i> We’re not just printing books: we’re weaving magic.</i></b><p class="text-primary">Using technology and the art of storytelling, including guided prompts and AI assistance, we capture the laughter, wisdom, and unique journeys that shape a life, creating resonant treasures for anyone, for generations.</p>
                       </div>
                       <div class="w-100"></div>
 
@@ -467,13 +497,13 @@
           </div>
         </div> -->
           <!-- Section Timeline-->
-          <section  class="section section-grid section-content overflow pb-medium stories_bg pb-2"
+          <section id="wsm"  class="section section-grid section-content overflow pb-medium stories_bg pb-2"
           data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
           data-grid-mobile="1"  style="margin-top: -1px;">
           <div class="container-fluid">
             <div class="row justify-content-center align-items-center section pb-2">
               <div class="col-12 col-lg-auto">
-                <h2 class="h2 mt-2 mb-0 text-primary minerva-font">Stories</h2>
+                <h2 class="h2 mt-2 mb-0 text-primary minerva-font">Why Stories Matter</h2>
                 <div class="w-100"></div>
                 <div class="section__headline mx-auto bg-primary"></div>
               </div>
@@ -491,11 +521,10 @@
                     <div class="card-body">
                       <h6 class="card-title">Childhood Memories</h6>
                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a onclick="showPopup(0)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                      <a onclick="showPopup(0)" class="trigger button button_bordered button_black mb-0 view-button" id="myBtn"
                         data-hover="View" href="#"><span class="button__label-hover">View</span></a>
                     </div>
                   </div>
-  
                   <div class="card mt-5">
                     <img src="img/assets/timeline/timeline02.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -514,7 +543,6 @@
                         data-hover="View" href="#"><span class="button__label-hover">View</span></a>
                     </div>
                   </div>
-  
                   <div class="card mt-5">
                     <img src="img/assets/timeline/timeline04.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -524,8 +552,6 @@
                         data-hover="View" href="#"><span class="button__label-hover">View</span></a>
                     </div>
                   </div>
-  
-  
                   <div class="card mb-5">
                     <img src="img/assets/timeline/timeline05.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -535,7 +561,6 @@
                         data-hover="View" href="#"><span class="button__label-hover">View</span></a>
                     </div>
                   </div>
-  
                   <div class="card mt-5">
                     <img src="img/assets/timeline/timeline06.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -554,8 +579,88 @@
                         data-hover="View" href="#"><span class="button__label-hover">View</span></a>
                     </div>
                   </div>
-  
-  
+                  <div class="card mt-5">
+                    <img src="img/assets/timeline/timeline09.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Wisdom and Reflections</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(7)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mb-5">
+                    <img src="img/assets/timeline/timeline10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Legacy & Hopes for the Future</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(8)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <!-- Second Set -->
+                  <div class="card mb-5">
+                    <img src="img/assets/timeline/timeline01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Childhood Memories</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(0)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mt-5">
+                    <img src="img/assets/timeline/timeline02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">School and College Days</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(1)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mb-5">
+                    <img src="img/assets/timeline/timeline03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Early Adulthood</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(2)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mt-5">
+                    <img src="img/assets/timeline/timeline04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Building My Family</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(3)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mb-5">
+                    <img src="img/assets/timeline/timeline05.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Building a Career, Purpose, or Contribution</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(4)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mt-5">
+                    <img src="img/assets/timeline/timeline06.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Triumphs & Challenges</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(5)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
+                  <div class="card mb-5">
+                    <img src="img/assets/timeline/timeline08.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Golden Years</h6>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a onclick="showPopup(6)" class="trigger button button_bordered button_black mb-0" id="myBtn"
+                        data-hover="View" href="#"><span class="button__label-hover">View</span></a>
+                    </div>
+                  </div>
                   <div class="card mt-5">
                     <img src="img/assets/timeline/timeline09.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -589,7 +694,7 @@
               <div class="col-lg-8">
                 <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
                   data-split-text-set="words">
-                  <h2 class="mt-0 mb-0 h2">Why Stories Matter?</h2>
+                  <h2 class="mt-0 mb-0 h2">Final Product Look</h2>
                 </div>
                 <div class="w-100"></div>
                 <div class="section__headline mx-auto"></div>
@@ -664,7 +769,7 @@
         
   
       <!-- section GRID PROJECTS 3 COLUMNS-->
-      <section class="section section-grid section-content overflow pb-medium bg-neutral-3"
+      <section id="ourproducts" class="section section-grid section-content overflow pb-medium bg-neutral-3"
         data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-tablet="2"
         data-grid-mobile="1"  style="margin-top: -1px;">
         <div class="container-fluid">
@@ -675,7 +780,7 @@
                 <div class="col-lg-8">
                   <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words"
                     data-split-text-set="words">
-                    <h2 class="mt-0 mb-0 h2 text-primary">What we Offer</h2>
+                    <h2 class="mt-0 mb-0 h2 text-primary">Our Products</h2>
                   </div>
                   <div class="w-100"></div>
                   <div class="section__headline mx-auto"></div>
@@ -702,16 +807,18 @@
                   </div>
 
                   <div class="figure-project__content  pt-1 pl-0">
-                    <h4 class="h4 figure-project__heading text-primary">Memories</h4>
+                    <h4 class="h4 figure-project__heading text-primary">The Life Book</h4>
                     <div class="figure-project__category mt-md-1 mt-0-5">
                       <div
                         class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
                         <!-- label by default -->
                         <div class="js-split-text split-text" data-split-text-type="lines"
                           data-split-text-set="lines">
-                          <p class="product_desc text-primary">Cherish and preserve your most treasured moments with a beautifully crafted storytelling photo book.</p>
-                          <a class="button button_bordered button_accent mb-0-5" data-hover="Learn More"
-                            href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          <p class="product_desc text-primary">The Life Book: Capture the heart and soul of a life lived. 'The Life Book' transforms cherished memories into a beautifully bound testament to a loved one's journey. Ideal for gifting to grandparents, parents, or crafting your own personal memoir, it's a timeless keepsake that celebrates the unique tapestry of a life</p>
+                          <div class="product_price"> <span>Starting Price</span> <span>₹ 11,000</span></div>
+                         
+                          <a class="button button_bordered button_accent mb-0-5" data-hover="Buy Now"
+                            href="product-details.html"><span class="button__label-hover">Buy Now</span></a>
                         </div>
 
                         <!-- - label by default -->
@@ -737,16 +844,17 @@
                     </div>
                   </div>
                   <div class="figure-project__content  pt-1 pl-0">
-                    <h4 class="h4 figure-project__heading text-primary">Personal</h4>
+                    <h4 class="h4 figure-project__heading text-primary">Career Chronicles</h4>
                     <div class="figure-project__category mt-md-1 mt-0-5">
                       <div
                         class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
                         <!-- label by default -->
                         <div class="js-split-text split-text " data-split-text-type="lines"
                           data-split-text-set="lines">
-                          <p class="product_desc text-primary">Celebrate your journey together with a personalized book filled with romance, memories, and heartfelt moments.</p>
-                          <a class="button button_bordered button_accent mb-0-5" data-hover="Learn More"
-                            href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          <p class="product_desc text-primary">Document the milestones, triumphs, and lessons of a professional journey. 'Career Chronicles' preserves the legacy of a career, from hard-earned stripes to the transition into retirement. This is the perfect retirement gift, honoring years of dedication and experience with a beautifully crafted narrative.</p>
+                          <div class="product_price"> <span>Starting Price</span> <span>₹ 21,000</span></div>
+                          <a class="button button_bordered button_accent mb-0-5" data-hover="Buy Now"
+                            href="product-details.html"><span class="button__label-hover">Buy Now</span></a>
                         </div>
                         <!-- - label by default -->
 
@@ -770,16 +878,17 @@
                     </div>
                   </div>
                   <div class="figure-project__content  pt-1 pl-0">
-                    <h4 class="h4 figure-project__heading text-primary">Professional</h4>
+                    <h4 class="h4 figure-project__heading text-primary">The Couple's Keepsake</h4>
                     <div class="figure-project__category mt-md-1 mt-0-5">
                       <div
                         class="change-text-hover small-caps js-change-text-hover change-text-hover_has-line text-left">
                         <!-- label by default -->
                         <div class=" js-split-text split-text" data-split-text-type="lines"
                           data-split-text-set="lines">
-                          <p class="product_desc text-primary">Showcase your career milestones, remarkable achievements, and inspiring success story in a professionally designed keepsake.</p>
-                          <a class="button button_bordered button_accent mb-0-5" data-hover="Learn More"
-                            href="product-details.html"><span class="button__label-hover">Learn More</span></a>
+                          <p class="product_desc text-primary">Celebrate the unique story of a partnership. 'You and Me' captures the essence of a couple's journey, from the first spark of connection to the shared adventures of building a life together. Ideal for wedding anniversaries or any milestone in a relationship, it's a heartfelt tribute to love and companionship</p>
+                          <div class="product_price"> <span>Starting Price</span> <span>₹ 51,000</span></div>
+                          <a class="button button_bordered button_accent mb-0-5" data-hover="Buy Nowe"
+                            href="product-details.html"><span class="button__label-hover">Buy Now</span></a>
                         </div>
                         <!-- - label by default -->
 
@@ -795,7 +904,7 @@
       </section>
       <!-- - section GRID PROJECTS 3 COLUMNS-->
         <!-- How it works -->
-        <div class="container-fluid hiw_bg">
+        <div class="container-fluid hiw_bg" id="hiw">
           <div class="row">
             <!-- section MASTHEAD -->
             <div class="col-12">
@@ -848,7 +957,7 @@
                 <p>Get Your <br> Forever Book!</p>
               </div>
             </div>
-            <div class="col-md-4 col-12 d-flex align-items-center">
+            <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
               <a class="button button_bordered button_white mb-0-5" data-hover="Learn More"
                 href="how_it_works.html"><span class="button__label-hover">Learn More</span></a>
             </div>
@@ -859,7 +968,7 @@
            <!-- FAQ -->
         <!-- section MASTHEAD -->
         <!-- section GRID FAQs -->
-        <section class="section section-masthead pt-small pb-small text-center"
+        <section id="faqs" class="section section-masthead pt-small pb-small text-center"
         data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
         <div class="section-masthead__inner container-fluid">
           <header class="row section-masthead__header justify-content-center">
@@ -1024,7 +1133,7 @@
       </div>
       <!-- section MASTHEAD -->
         <!-- section Customer Review MASTHEAD -->
-        <section class="section section-masthead pt-small pb-small text-center"
+        <section id="reviews" class="section section-masthead pt-small pb-small text-center"
           data-arts-os-animation="data-arts-os-animation" data-background-color="var(--color-light-1)">
           <div class="section-masthead__inner container-fluid">
             <header class="row section-masthead__header justify-content-center">
@@ -1389,7 +1498,7 @@
         </section>
        
         <!-- section CONTACTS 3 COLUMNS -->
-        <section class="section section-fullheight">
+        <section class="section section-fullheight" id="contact_us">
           <div class="section-fullheight__inner">
             <div class="container-fluid no-gutters h-100">
               <div class="row no-gutters h-100">
@@ -1488,7 +1597,7 @@
         <div class="footer__area pt-md-5 pt-sm-3 pb-md-3 pb-sm-1 pt-2 pb-0">
           <div class="row">
             <!-- call to action -->
-            <div class="col-lg-5">
+            <div class="col-lg-4">
               <section class="widget widget_Once Upon A Time_cta">
                 <!-- header -->
                 <h2 class="h2 mt-0 mb-0-5">Ready to Capture the Moments?</h2>
@@ -1499,54 +1608,38 @@
               </section>
             </div>
             <!-- - call to action -->
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <div class="row justify-content-lg-between">
                 <!-- widget MENU #1 -->
-                <div class="col-lg-3 col-sm-6 col-12">
+                <div class="col-lg-6 col-sm-6 col-12">
                   <section class="widget widget_nav_menu">
                     <!-- header -->
-                    <h2 class="widgettitle">2020' Works</h2>
+                    <h2 class="widgettitle">About us</h2>
                     <!-- - header -->
                     <!-- content -->
-                    <ul class="menu js-menu">
-                      <li><a href="project-details-1-fullscreen-center.html">Nordic Adventure</a>
-                      </li>
-                      <li><a href="project-details-2-bottom-center.html">Sunrise in Desert</a>
-                      </li>
-                      <li><a href="project-details-3-halfscreen-left-right.html">Cassio Apartment</a>
-                      </li>
-                      <li><a href="project-details-4-halfscreen-left-left.html">Nothern Wave</a>
-                      </li>
-                      <li><a href="project-details-5-bottom-container-center.html">On the Edge</a>
-                      </li>
-                      <li><a href="project-details-6-bottom-fullwidth.html">Paysage Fiction</a>
-                      </li>
-                      <li><a href="project-details-7-fullscreen-left.html">Silence &amp; Noise</a>
-                      </li>
-                    </ul>
+                    <p class="quick_intro">"Imagine a world where everyone’s story is treasured, we are making that a reality with Once Upon a Time - a revolutionary service that transforms cherished memories into beautiful legacy storybooks. <br><br> <b>We’re not just printing books: we’re weaving magic.</b></p>
                     <!-- - content -->
                   </section>
+                 
                 </div>
                 <!-- - widget MENU #1 -->
                 <!-- widget MENU #2 -->
                 <div class="col-lg-3 col-sm-6 col-12">
                   <section class="widget widget_nav_menu">
                     <!-- header -->
-                    <h2 class="widgettitle">2019' Works</h2>
+                    <h2 class="widgettitle">Quick Links</h2>
                     <!-- - header -->
                     <!-- content -->
-                    <ul class="menu js-menu">
-                      <li><a href="project-details-8-halfscreen-right-left.html">Minimalex Cosmetics</a>
+                    <ul class="menu js-menu d-flex flex-column">
+                      <li><a href="index.html">Home</a>
                       </li>
-                      <li><a href="project-details-9-fullscreen-center.html">La Isla Bonita</a>
+                      <li><a href="product-list.html">Products</a>
                       </li>
-                      <li><a href="project-details-10-halfscreen-left-right.html">Kinsey Premium Furniture</a>
+                      <li><a href="#hiw">How it works</a>
                       </li>
-                      <li><a href="project-details-11-fullscreen-center.html">Dancing in the Dark</a>
+                      <li><a href="faq.html">FAQs</a>
                       </li>
-                      <li><a href="project-details-12-bottom-container-center.html">The Silent Listener</a>
-                      </li>
-                      <li><a href="project-details-13-bottom-container-center.html">Arrigo Casual Accessories</a>
+                      <li><a href="#review">Customer Reviews</a>
                       </li>
                     </ul>
                     <!-- - content -->
@@ -1557,21 +1650,13 @@
                 <div class="col-lg-3 col-sm-6 col-12">
                   <section class="widget widget_nav_menu">
                     <!-- header -->
-                    <h2 class="widgettitle">Services</h2>
+                    <h2 class="widgettitle">Others</h2>
                     <!-- - header -->
                     <!-- content -->
                     <ul class="menu js-menu">
-                      <li><a href="#">Weddings</a>
+                      <li><a href="#">Terms of service</a>
                       </li>
-                      <li><a href="#">Portraits</a>
-                      </li>
-                      <li><a href="#">Commercial</a>
-                      </li>
-                      <li><a href="#">Studio</a>
-                      </li>
-                      <li><a href="#">Reportages</a>
-                      </li>
-                      <li><a href="#">Corporate</a>
+                      <li><a href="#">Privacy Policy</a>
                       </li>
                     </ul>
                     <!-- - content -->
@@ -1579,25 +1664,7 @@
                 </div>
                 <!-- - widget MENU #3 -->
                 <!-- widget MENU #4 -->
-                <div class="col-lg-3 col-sm-6 col-12">
-                  <section class="widget widget_nav_menu">
-                    <!-- header -->
-                    <h2 class="widgettitle">Studio</h2>
-                    <!-- - header -->
-                    <!-- content -->
-                    <ul class="menu js-menu">
-                      <li><a href="page-inner-services-1.html">Services</a>
-                      </li>
-                      <li><a href="page-inner-about-1.html">About</a>
-                      </li>
-                      <li><a href="blog-grid-2-columns.html">Blog</a>
-                      </li>
-                      <li><a href="page-inner-contacts-1.html">Contacts</a>
-                      </li>
-                    </ul>
-                    <!-- - content -->
-                  </section>
-                </div>
+              
                 <!-- - widget MENU #4 -->
               </div>
             </div>
@@ -1659,8 +1726,8 @@
   
                   <!-- Modal -->
   
-                  <div id="popup" class="popup modal-content animate__animated animate__fadeIn">
-                    <span class="close close-button" onclick="closePopup()">&times;</span>
+                  <div id="stories_popup" class="popup modal-content animate__animated animate__fadeIn">
+                    <span class="close close-button closeModal" onclick="closePopup()">&times;</span>
                     <div class="model-wrapper">
                       <div class="left-content">
                         <h3 id="popup-title"></h3>
