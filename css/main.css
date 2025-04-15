@@ -13069,11 +13069,6 @@ p.card-text {
 
 }
 
-.no-scroll {
-  height: 100vh;
-  overflow: hidden;
-  z-index: 999;
-}
 
 .popup {
   z-index: 99;
@@ -13467,9 +13462,10 @@ p.card-text {
   }
 
   .popup.show {
-    top: 38%;
+    top: 33%;
     left: 50%;
     width: 90%;
+    z-index: 9999;
   }
 
   .model-wrapper {
