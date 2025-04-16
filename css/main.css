@@ -2,7 +2,7 @@
  * ==========================================================================
  * ==========================================================================
  *
- * Rhye – AJAX Portfolio HTML5 Template
+ * ot – AJAX Portfolio HTML5 Template
  *
  * [Table of Contents]
  *
@@ -12400,21 +12400,21 @@ small, .small {
 /*!========================================================================
  * 106. Widget Menu Inline
  * ======================================================================!*/
-.widget_rhye_menu_inline ul li {
+.widget_ot_menu_inline ul li {
   display: inline-block;
   margin-bottom: 0;
 }
 
-.widget_rhye_menu_inline ul li a {
+.widget_ot_menu_inline ul li a {
   padding: 4px;
 }
 
-.widget_rhye_menu_inline ul li a:before {
+.widget_ot_menu_inline ul li a:before {
   display: none;
 }
 
 @media screen and (max-width: 991px) {
-  .widget_rhye_menu_inline .menu {
+  .widget_ot_menu_inline .menu {
     text-align: center;
   }
 }
@@ -12606,11 +12606,11 @@ small, .small {
 /*!========================================================================
  * 112. Widget Social
  * ======================================================================!*/
-.widget_rhye_social ul {
+.widget_ot_social ul {
   text-align: inherit;
 }
 
-.widget_rhye_social ul li {
+.widget_ot_social ul li {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -12664,7 +12664,7 @@ small, .small {
 /*!========================================================================
  * 114. Widget CTA
  * ======================================================================!*/
-.widget_rhye_cta {
+.widget_ot_cta {
   max-width: 700px;
 }
 
@@ -12679,12 +12679,12 @@ small, .small {
 /*!========================================================================
  * 116. Widget Logo
  * ======================================================================!*/
-.widget_rhye_logo, .widget_rhye_logo {
+.widget_ot_logo, .widget_ot_logo {
   max-width: 360px;
 }
 
 @media screen and (max-width: 991px) {
-  .widget_rhye_logo, .widget_rhye_logo {
+  .widget_ot_logo, .widget_ot_logo {
     max-width: 100%;
   }
 }
