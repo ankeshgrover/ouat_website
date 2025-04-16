@@ -9681,7 +9681,10 @@ const popups = [
 let typingInterval;
 
         function showPopup(index) {
-            document.body.style.overflow = "hidden";
+			console.log(index)
+			const wrapper = document.querySelector('.cards-wrapper');
+			wrapper.classList.remove('animation'); 
+			document.body.style.overflow = "hidden";
             const popup = document.getElementById("stories_popup");
             document.getElementById("popup-title").innerText = popups[index].title;
             const imagesContainer = document.getElementById("popup-images");
@@ -9693,6 +9696,8 @@ let typingInterval;
         }
 
         function closePopup() {
+			const wrapper = document.querySelector('.cards-wrapper');
+			wrapper.classList.add('animation'); 
             document.body.style.overflow = "auto";
             const popup = document.getElementById("stories_popup");
             popup.classList.remove("show");
@@ -9778,3 +9783,10 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+//Accordian-------
+document.querySelectorAll('.accordion-button').forEach(button => {
+	button.addEventListener('click', () => {
+	  const expanded = button.getAttribute('aria-expanded') === 'true';
+	  button.setAttribute('aria-expanded', !expanded);
+	});
+  });

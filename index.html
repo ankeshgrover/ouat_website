@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/vendor.css" />
   <!-- Template Main Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="/fonts/Cochin/style.css">
   <!-- Favicons & App Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png" />
@@ -514,7 +515,7 @@
             <div class="row p-0 justify-content-between align-items-center section pb-medium">
               
               <div class="col-12 col-lg-auto stories_timeline">
-                <div class="cards-wrapper" id="scrollTarget" >
+                <div class="cards-wrapper animation"  id="scrollTarget" >
   
                   <div class="card mb-5">
                     <img src="img/assets/timeline/timeline01.jpg" class="card-img-top" alt="...">
@@ -989,7 +990,7 @@
             <div class="accordion-item">
               <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is "Once Upon a
                   Time"?</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
+              <div class="accordion-content" #accordion-button-1>
                 <p>Once Upon a Time" is a service that helps families capture and preserve their cherished memories by
                   transforming them into beautifully crafted legacy storybooks. We guide you through the process of
                   gathering stories, and then weave them into a timeless keepsake which is a hard-bound book. An
@@ -1728,7 +1729,7 @@
   
                   <div id="stories_popup" class="popup modal-content animate__animated animate__fadeIn">
                     <span class="close close-button closeModal" onclick="closePopup()">&times;</span>
-                    <div class="model-wrapper">
+                    <div class="model-wrapper overflow-model">
                       <div class="left-content">
                         <h3 id="popup-title"></h3>
                         <p id="popup-description" class="typing-container"></p>
@@ -1956,6 +1957,24 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
     async></script>
+<!-- Accordian -->
+    <script>
+      const accordionButtons = document.querySelectorAll('.accordion button');
+    
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+    
+          // Collapse all accordions first
+          accordionButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+    
+          // If it was previously collapsed, expand this one
+          if (!expanded) {
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    </script>
 </body>
 
 </html>
