@@ -9680,43 +9680,54 @@ const popups = [
 
 let typingInterval;
 
-        function showPopup(index) {
-			console.log(index)
-			const wrapper = document.querySelector('.cards-wrapper');
-			wrapper.classList.remove('animation'); 
-			document.body.style.overflow = "hidden";
-            const popup = document.getElementById("stories_popup");
-            document.getElementById("popup-title").innerText = popups[index].title;
-            const imagesContainer = document.getElementById("popup-images");
-            imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
-            popup.classList.add("show");
-            popup.style.display = "block";
-            clearInterval(typingInterval);
-            typeText("popup-description", popups[index].description);
-        }
+function showPopup(index) {
+	try {
+		clearInterval(typingInterval);
+		typeText("popup-description", popups[index].description);
+	  } catch (e) {
+		console.error("Typing error:", e);
+	  }
+	const wrapper = document.querySelector('.cards-wrapper');
+	wrapper.classList.remove('animation'); 
+	document.body.style.overflow = "hidden";
+	const popup = document.getElementById("stories_popup");
+	document.getElementById("popup-title").innerText = popups[index].title;
+	const imagesContainer = document.getElementById("popup-images");
+	imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
+	popup.classList.add("show");
+	popup.style.display = "block";
+	clearInterval(typingInterval);
+	typeText("popup-description", popups[index].description);
+	setVhUnit();
+}
 
-        function closePopup() {
-			const wrapper = document.querySelector('.cards-wrapper');
-			wrapper.classList.add('animation'); 
-            document.body.style.overflow = "auto";
-            const popup = document.getElementById("stories_popup");
-            popup.classList.remove("show");
-            setTimeout(() => { popup.style.display = "none"; }, 300);
-            clearInterval(typingInterval);
-        }
+function closePopup() {
+	const wrapper = document.querySelector('.cards-wrapper');
+	wrapper.classList.add('animation'); 
+	document.body.style.overflow = "auto";
+	const popup = document.getElementById("stories_popup");
+	popup.classList.remove("show");
+	setTimeout(() => { popup.style.display = "none"; }, 300);
+	clearInterval(typingInterval);
+	setVhUnit();
+}
 
-        function typeText(elementId, text) {
-            const element = document.getElementById(elementId);
-            element.innerHTML = "";
-            let i = 0;
-            typingInterval = setInterval(() => {
-                element.innerHTML = text.slice(0, i + 1);
-                element.scrollTop = element.scrollHeight;
-                i++;
-                if (i === text.length) clearInterval(typingInterval);
-            }, 20);
-        }
-
+function typeText(elementId, text) {
+	const element = document.getElementById(elementId);
+	element.innerHTML = "";
+	let i = 0;
+	typingInterval = setInterval(() => {
+		element.innerHTML = text.slice(0, i + 1);
+		element.scrollTop = element.scrollHeight;
+		i++;
+		if (i === text.length) clearInterval(typingInterval);
+	}, 20);
+}
+function setVhUnit() {
+	document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  }
+  window.addEventListener('resize', setVhUnit);
+  setVhUnit();
 // Modal Scroll--------------------------------------Start
 const viewButtons = document.querySelectorAll('.view-button');
 const carousel = document.querySelector('.cards-wrapper');

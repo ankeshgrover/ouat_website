@@ -13469,9 +13469,12 @@ p.card-text {
   .popup::after {
     top: 80%;
   }
-
+  body.popup-open {
+    overflow: hidden;
+  }
   .popup.show {
-    top: 33%;
+    /* top: 33%; old this */
+    top: 50%;
     left: 50%;
     width: 90%;
     z-index: 9999;
