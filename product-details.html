@@ -356,10 +356,12 @@
             </div>
             <div class="col-lg-6 order-lg-1 bg-white">
               <div class="container-fluid container-fluid_paddings container_px-md-0 bg-neutral-3">
-                <section class="section section-slider-images">
+                 <!-- - section MASTHEAD -->
+        <!-- - section SERVICES SLIDER -->
+                <!-- <section class="section section-slider-images">
                   <div class="slider slider-images js-slider-images">
-                    <!-- slider HEADER -->
-                    <!-- <div class="slider-images__header">
+                    slider HEADER
+                    <div class="slider-images__header">
                         <div class="row no-gutters justify-content-between">
                           <div class="col-auto">
                             <div class="slider__counter slider__counter_mini">
@@ -372,8 +374,8 @@
                             <div class="slider__total slider__total_mini js-slider__counter-total">I</div>
                           </div>
                         </div>
-                      </div> -->
-                    <!-- - slider HEADER -->
+                      </div>
+                    - slider HEADER
                     <div class="swiper-container js-slider-images__slider" data-drag-mouse="true"
                       data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true"
                       data-slides-per-view="1">
@@ -398,11 +400,11 @@
                         </div>
                       </div>
                     </div>
-                    <!-- slider FOOTER -->
+                    slider FOOTER
                     <div class="slider-images__footer">
                       <div class="row no-gutters justify-content-center">
                         <div class="col-auto">
-                          <!-- slider DOTS -->
+                          slider DOTS
                           <div class="slider__dots js-slider__dots">
                             <div class="slider__dot slider__dot_active">
                               <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
@@ -429,13 +431,74 @@
                               </svg>
                             </div>
                           </div>
-                          <!-- - slider DOTS -->
+                          - slider DOTS
+                        </div>
+                      </div>
+                    </div>
+                    - slider FOOTER
+                  </div>
+                </section> -->
+                <section class="section section-slider-images">
+                  <div class="slider slider-images js-slider-images">
+                    <div class="swiper-container js-slider-images__slider"
+                         data-drag-mouse="true"
+                         data-drag-cursor="true"
+                         data-drag-class="slider-images_touched"
+                         data-auto-height="true"
+                         data-slides-per-view="1"
+                         data-autoplay-enabled="true"
+                         data-autoplay-delay="4000"> <!-- autoplay every 4 seconds -->
+                         
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide overflow d-flex-centered text-center">
+                          <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                            <div class="slider__zoom-container w-100 h-100">
+                              <img class="swiper-lazy" src="#" data-src="img/assets/project2/img-2-2.jpg" width="1280" height="1280" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide overflow d-flex-centered text-center">
+                          <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                            <div class="slider__zoom-container w-100 h-100">
+                              <img class="swiper-lazy" src="#" data-src="img/assets/project2/img-2-3.jpg" width="1280" height="1280" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide overflow d-flex-centered text-center">
+                          <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="10%">
+                            <div class="slider__zoom-container w-100 h-100">
+                              <img class="swiper-lazy" src="#" data-src="img/assets/project2/img-2-4.jpg" width="1280" height="1280" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- slider FOOTER -->
+                    <div class="slider-images__footer">
+                      <div class="row no-gutters justify-content-center">
+                        <div class="col-auto">
+                          <div class="slider__dots js-slider__dots">
+                            <div class="slider__dot slider__dot_active">
+                              <svg class="svg-circle" viewBox="0 0 60 60"><circle class="circle" cx="30" cy="30" r="29" fill="none"></circle></svg>
+                            </div>
+                            <div class="slider__dot">
+                              <svg class="svg-circle" viewBox="0 0 60 60"><circle class="circle" cx="30" cy="30" r="29" fill="none"></circle></svg>
+                            </div>
+                            <div class="slider__dot">
+                              <svg class="svg-circle" viewBox="0 0 60 60"><circle class="circle" cx="30" cy="30" r="29" fill="none"></circle></svg>
+                            </div>
+                            <div class="slider__dot">
+                              <svg class="svg-circle" viewBox="0 0 60 60"><circle class="circle" cx="30" cy="30" r="29" fill="none"></circle></svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <!-- - slider FOOTER -->
                   </div>
                 </section>
+                
               </div>
             </div>
           </div>
@@ -968,6 +1031,27 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
     async></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
+    async></script>
+<!-- Accordian -->
+    <script>
+      const accordionButtons = document.querySelectorAll('.accordion button');
+    
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+    
+          // Collapse all accordions first
+          accordionButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+    
+          // If it was previously collapsed, expand this one
+          if (!expanded) {
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    </script>
 </body>
 
 </html>

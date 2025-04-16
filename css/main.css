@@ -12766,13 +12766,22 @@ small, .small {
 .cards-wrapper {
   width: max-content;
   display: flex;
+  /* animation: scroll 20s linear infinite; */
+}
+
+.cards-wrapper.animation {
   animation: scroll 20s linear infinite;
 }
 
-
-.cards-wrapper:hover {
+.cards-wrapper.animation:hover {
   animation-play-state: paused;
 }
+/* .scroll-animation {
+  animation: scroll 20s linear infinite;
+}
+.cards-wrapper:hover {
+  animation-play-state: paused;
+} */
 
 @keyframes scroll {
   0% {
@@ -12967,7 +12976,7 @@ p.card-text {
 
 .right-image {
   height: inherit;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding: 1rem;
   width: 40%;
   /* background: #E5E1C7; */
@@ -13210,7 +13219,7 @@ p.card-text {
 }
 
 .accordion button[aria-expanded='true'] .icon::after {
-  width: 0;
+  width: 500;
 }
 
 .accordion button[aria-expanded='true']+.accordion-content {
@@ -13497,3 +13506,16 @@ p.card-text {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {}
+.overflow-model {
+  overflow-y: auto;
+}
+
+.overflow-model::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-model::-webkit-scrollbar-thumb {
+  background-color: #B2986B;
+  border-radius: 50px;
+}
+
