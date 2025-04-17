@@ -127,27 +127,51 @@
  * ==========================================================================
  * ==========================================================================
  */
+/* 1. Cochin */
 @font-face {
-  font-family: 'Cochin', serif;
-  src: local('') url(../HTML/fonts/Cochin/CochinLTStd.ttf) format(ttf);
-}
-
-@font-face {
-  font-family: 'EngraversGothic BT', serif;
-  src: local('EngraversGothic BT') url(/HTML/fonts/Engravers_gothic/Regular.ttf) format(otf);
-}
-
-@font-face {
-  font-family: 'Falidasi', serif;
-  src: local('') url(/HTML/fonts/Falidasi-Triasie-Font/normal.otf) format(otf);
-}
-
-@font-face {
-  font-family: 'Minerva Modern', serif;
+  font-family: 'Cochin';
+  src: url('../HTML/fonts/Cochin/CochinLTStd.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  src: local('/fonts/minerva-modern/Black.ttf') url("/fonts/minerva-modern/Black.ttf") format(ttf);
 }
 
+/* Optional: Add WOFF fallback */
+@font-face {
+  font-family: 'Cochin';
+  src: url('../HTML/fonts/Cochin/Cochin.woff2') format('woff2'),
+       url('../HTML/fonts/Cochin/Cochin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Engravers Gothic */
+@font-face {
+  font-family: 'EngraversGothic';
+  src: url('../HTML/fonts/Engravers_gothic/Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 3. Falidasi */
+@font-face {
+  font-family: 'Falidasi';
+  src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 4. Minerva Modern */
+@font-face {
+  font-family: 'Minerva Modern';
+  src: url('../HTML/fonts/minerva-modern/Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global font restriction */
+/* body, * {
+  font-family: 'Cochin', 'EngraversGothic', 'Falidasi', 'Minerva Modern', sans-serif !important;
+} */
 .minerva-font {
   font-family: 'Minerva Modern' !important;
   font-weight: normal !important;
