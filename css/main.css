@@ -13370,7 +13370,12 @@ p.card-text {
 
 /* About US */
 .about_bg-img {
-  background-image: url("../img/general/hiw_bg.png");
+  background-image: url("../img/general/about_us.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.aboutus_text{
+  background-image: url("../img/general/OUT-about-us-24.png");
   background-size: cover;
   background-position: bottom;
 }
