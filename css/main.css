@@ -138,17 +138,19 @@
 @font-face {
   font-family: 'Cochin';
   src: url('../HTML/fonts/Cochin/CochinLTStd.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
 /*2. Optional: Add WOFF fallback */
 @font-face {
-  font-family: 'Cochin';
+  font-family:'Cochin', serif !important;
   src: url('../HTML/fonts/Cochin/Cochin.woff2') format('woff2'),
+       url('/fonts/Cochin/CochinLTStd-Italic.ttf') format('woff2'),
        url('../HTML/fonts/Cochin/Cochin.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+       
+  /* font-weight: normal; */
+  /* font-style: normal; */
 
 }
 
@@ -177,11 +179,11 @@
   font-family: 'minerva-modern', serif !important;
   src: url(../fonts/minerva-modern/Bold.ttf);
 }
-i, em {
+/* i, em {
   font-style: normal !important;
   font-family: inherit !important;
   font-weight: inherit !important;
-}
+} */
 
 
 /* Global font restriction */
@@ -211,7 +213,7 @@ i, em {
 
 .cochin-font {
   letter-spacing: 1px;
-  font-style: normal !important;
+  /* font-style: normal !important; */
   font-family: 'Cochin', serif !important;
   font-weight: normal !important;
 }
@@ -13224,10 +13226,11 @@ p.card-text {
 
 .accordion button {
   position: relative;
-  display: block;
+  display: flex;
+  /* display: block; */
   text-align: left;
   width: 100%;
-  padding: 1em 0;
+  /* padding: 1em 0; */
   color: #B2986B;
   font-size: 1.15rem;
   font-weight: 400;
@@ -13290,6 +13293,7 @@ p.card-text {
 
 .accordion button[aria-expanded='true'] .icon::after {
   width: 500;
+  display: none;
 }
 
 .accordion button[aria-expanded='true']+.accordion-content {
@@ -13392,8 +13396,9 @@ p.card-text {
   padding: .3rem 0.8rem !important;
 }
 
-/* How it works */
+/* How It Works */
 .hiw_bg {
+  position: relative;
   background-image: url("../img/general/hiw_bg.jpg");
   background-size: cover;
   background-position: bottom;
@@ -13418,7 +13423,11 @@ p.card-text {
   font-size: 1.1rem;
   text-align: center;
 }
-
+.hiw-learn-more-btn{
+  position: absolute;
+  bottom: 20px;
+    right: 20px;
+}
 /* Why Stories Matter? */
 .wsm-bg {
   background: rgb(255, 255, 255);
