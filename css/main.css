@@ -128,6 +128,7 @@
  * ==========================================================================
  */
 
+
  *, *::before, *::after {
   font-style: normal !important;
   unicode-bidi: normal;
@@ -135,19 +136,54 @@
 @font-face {
   font-family: 'Cochin', serif !important;
   src: local('') url(../HTML/fonts/Cochin/CochinLTStd.ttf) format(ttf);
+
+/* 1. Cochin */
+@font-face {
+  font-family: 'Cochin';
+  src: url('../HTML/fonts/Cochin/CochinLTStd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Optional: Add WOFF fallback */
 @font-face {
+  font-family: 'Cochin';
+  src: url('../HTML/fonts/Cochin/Cochin.woff2') format('woff2'),
+       url('../HTML/fonts/Cochin/Cochin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* 2. Engravers Gothic */
+@font-face {
+
   font-family: 'EngraversGothic BT', serif !important;
   src: local('EngraversGothic BT') url(/HTML/fonts/Engravers_gothic/Regular.ttf) format(otf);
+
+  font-family: 'EngraversGothic';
+  src: url('../HTML/fonts/Engravers_gothic/Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
+/* 3. Falidasi */
 @font-face {
+
   font-family: 'Falidasi', serif !important;
   src: local('') url(/HTML/fonts/Falidasi-Triasie-Font/normal.otf) format(otf);
+
+  font-family: 'Falidasi';
+  src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
+/* 4. Minerva Modern */
 @font-face {
+
   font-family: 'Minerva Modern', serif !important;
   font-style: normal !important;
   src: local('/fonts/minerva-modern/Black.ttf') url("/fonts/minerva-modern/Black.ttf") format(ttf);
@@ -157,6 +193,18 @@ i, em {
   font-family: inherit !important;
   font-weight: inherit !important;
 }
+
+  font-family: 'Minerva Modern';
+  src: url('../HTML/fonts/minerva-modern/Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global font restriction */
+/* body, * {
+  font-family: 'Cochin', 'EngraversGothic', 'Falidasi', 'Minerva Modern', sans-serif !important;
+} */
+
 .minerva-font {
   font-family: 'Minerva Modern' !important;
   font-style: normal !important;
@@ -13517,27 +13565,43 @@ p.card-text {
   }
   .popup.show {
     /* top: 33%; old this */
-    top: 60%;
+    top: 54%;
     left: 50%;
     width: 90%;
     z-index: 9999;
   }
   .popup {
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 81);
   }
   .model-wrapper {
     height: 80vh;
     flex-direction: column-reverse;
   }
 
+  .left-content {
+    overflow: auto !important;
+  
+  }
   .left-content, .right-image {
     width: 100%;
   }
-
+  .overflow-model1 {
+    overflow-y: auto;
+  }
+  
+  .overflow-model1::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .overflow-model1::-webkit-scrollbar-thumb {
+    background-color: #B2986B;
+    border-radius: 50px;
+  }
+  
   .right-image {
     height: 300px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     overflow-y: hidden;
   }
 
