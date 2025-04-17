@@ -9681,36 +9681,87 @@ const popups = [
 let typingInterval;
 
 function showPopup(index) {
-	try {
-		clearInterval(typingInterval);
-		typeText("popup-description", popups[index].description);
-	  } catch (e) {
-		console.error("Typing error:", e);
-	  }
 	const wrapper = document.querySelector('.cards-wrapper');
-	wrapper.classList.remove('animation'); 
-	document.body.style.overflow = "hidden";
 	const popup = document.getElementById("stories_popup");
-	document.getElementById("popup-title").innerText = popups[index].title;
+	const title = document.getElementById("popup-title");
 	const imagesContainer = document.getElementById("popup-images");
+
+	// Safety checks
+	if (!popup || !title || !imagesContainer || !popups[index]) return;
+
+	// Prevent background scroll
+	document.body.classList.add('popup-open');
+
+	// Update popup content
+	title.innerText = popups[index].title;
 	imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
-	popup.classList.add("show");
+
+	// Show popup
 	popup.style.display = "block";
+	setTimeout(() => popup.classList.add("show"), 10); // allow CSS transition
+
+	// Typing effect
 	clearInterval(typingInterval);
-	typeText("popup-description", popups[index].description);
-	setVhUnit();
+	try {
+		typeText("popup-description", popups[index].description);
+	} catch (e) {
+		console.warn("typeText error:", e);
+	}
+
+	// Optional: disable cards-wrapper animation
+	if (wrapper) wrapper.classList.remove('animation');
 }
 
 function closePopup() {
 	const wrapper = document.querySelector('.cards-wrapper');
-	wrapper.classList.add('animation'); 
-	document.body.style.overflow = "auto";
 	const popup = document.getElementById("stories_popup");
+
+	// Hide popup with fade effect
 	popup.classList.remove("show");
-	setTimeout(() => { popup.style.display = "none"; }, 300);
+	setTimeout(() => popup.style.display = "none", 300);
+
+	// Re-enable scroll
+	document.body.classList.remove('popup-open');
+
+	// Re-enable cards-wrapper animation
+	if (wrapper) wrapper.classList.add('animation');
+
+	// Stop typing
 	clearInterval(typingInterval);
-	setVhUnit();
 }
+
+function setViewportHeight() {
+	document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+window.addEventListener('resize', setViewportHeight);
+window.addEventListener('orientationchange', setViewportHeight);
+setViewportHeight();
+
+
+//-------------------------------------------- OLD CODE --------------------------------------
+// function showPopup(index) {
+// 	const wrapper = document.querySelector('.cards-wrapper');
+// 	wrapper.classList.remove('animation'); 
+// 	document.body.style.overflow = "hidden";
+// 	const popup = document.getElementById("stories_popup");
+// 	document.getElementById("popup-title").innerText = popups[index].title;
+// 	const imagesContainer = document.getElementById("popup-images");
+// 	imagesContainer.innerHTML = popups[index].images.map(img => `<img src="${img}" alt="">`).join("");
+// 	popup.classList.add("show");
+// 	popup.style.display = "block";
+// 	clearInterval(typingInterval);
+// 	typeText("popup-description", popups[index].description);
+// }
+
+// function closePopup() {
+// 	const wrapper = document.querySelector('.cards-wrapper');
+// 	wrapper.classList.add('animation'); 
+// 	document.body.style.overflow = "auto";
+// 	const popup = document.getElementById("stories_popup");
+// 	popup.classList.remove("show");
+// 	setTimeout(() => { popup.style.display = "none"; }, 300);
+// 	clearInterval(typingInterval);
+// }
 
 function typeText(elementId, text) {
 	const element = document.getElementById(elementId);
@@ -9723,11 +9774,7 @@ function typeText(elementId, text) {
 		if (i === text.length) clearInterval(typingInterval);
 	}, 20);
 }
-function setVhUnit() {
-	document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-  }
-  window.addEventListener('resize', setVhUnit);
-  setVhUnit();
+
 // Modal Scroll--------------------------------------Start
 const viewButtons = document.querySelectorAll('.view-button');
 const carousel = document.querySelector('.cards-wrapper');
