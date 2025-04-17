@@ -13550,6 +13550,10 @@ p.card-text {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .back-video {
+    height: 100vh;
+    width: fit-content;
+  }
   .popup {
     position: fixed;
     top: 20%;
@@ -13617,6 +13621,11 @@ p.card-text {
     justify-content: space-between;
     height: 150px;
     margin: 1rem;
+  }
+  .hiw-learn-more-btn{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
