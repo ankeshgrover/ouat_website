@@ -127,6 +127,16 @@
  * ==========================================================================
  * ==========================================================================
  */
+
+
+ *, *::before, *::after {
+  font-style: normal !important;
+  unicode-bidi: normal;
+}
+@font-face {
+  font-family: 'Cochin', serif !important;
+  src: local('') url(../HTML/fonts/Cochin/CochinLTStd.ttf) format(ttf);
+
 /* 1. Cochin */
 @font-face {
   font-family: 'Cochin';
@@ -142,26 +152,48 @@
        url('../HTML/fonts/Cochin/Cochin.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 
 /* 2. Engravers Gothic */
 @font-face {
+
+  font-family: 'EngraversGothic BT', serif !important;
+  src: local('EngraversGothic BT') url(/HTML/fonts/Engravers_gothic/Regular.ttf) format(otf);
+
   font-family: 'EngraversGothic';
   src: url('../HTML/fonts/Engravers_gothic/Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 /* 3. Falidasi */
 @font-face {
+
+  font-family: 'Falidasi', serif !important;
+  src: local('') url(/HTML/fonts/Falidasi-Triasie-Font/normal.otf) format(otf);
+
   font-family: 'Falidasi';
   src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 /* 4. Minerva Modern */
 @font-face {
+
+  font-family: 'Minerva Modern', serif !important;
+  font-style: normal !important;
+  src: local('/fonts/minerva-modern/Black.ttf') url("/fonts/minerva-modern/Black.ttf") format(ttf);
+}
+i, em {
+  font-style: normal !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+
   font-family: 'Minerva Modern';
   src: url('../HTML/fonts/minerva-modern/Black.ttf') format('truetype');
   font-weight: normal;
@@ -172,14 +204,17 @@
 /* body, * {
   font-family: 'Cochin', 'EngraversGothic', 'Falidasi', 'Minerva Modern', sans-serif !important;
 } */
+
 .minerva-font {
   font-family: 'Minerva Modern' !important;
+  font-style: normal !important;
   font-weight: normal !important;
 
 }
 
 .cochin-font {
   letter-spacing: 2px;
+  font-style: normal !important;
   font-family: 'Cochin', serif !important;
   font-weight: normal !important;
 }
