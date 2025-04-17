@@ -999,24 +999,6 @@
     <script
     src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&amp;key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc"
     async></script>
-<!-- Accordian -->
-    <script>
-      const accordionButtons = document.querySelectorAll('.accordion button');
-    
-      accordionButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const expanded = button.getAttribute('aria-expanded') === 'true';
-    
-          // Collapse all accordions first
-          accordionButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
-    
-          // If it was previously collapsed, expand this one
-          if (!expanded) {
-            button.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-    </script>
 </body>
 
 </html>
