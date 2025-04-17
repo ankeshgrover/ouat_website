@@ -127,35 +127,46 @@
  * ==========================================================================
  * ==========================================================================
  */
+
+ *, *::before, *::after {
+  font-style: normal !important;
+  unicode-bidi: normal;
+}
 @font-face {
-  font-family: 'Cochin', serif;
+  font-family: 'Cochin', serif !important;
   src: local('') url(../HTML/fonts/Cochin/CochinLTStd.ttf) format(ttf);
 }
 
 @font-face {
-  font-family: 'EngraversGothic BT', serif;
+  font-family: 'EngraversGothic BT', serif !important;
   src: local('EngraversGothic BT') url(/HTML/fonts/Engravers_gothic/Regular.ttf) format(otf);
 }
 
 @font-face {
-  font-family: 'Falidasi', serif;
+  font-family: 'Falidasi', serif !important;
   src: local('') url(/HTML/fonts/Falidasi-Triasie-Font/normal.otf) format(otf);
 }
 
 @font-face {
-  font-family: 'Minerva Modern', serif;
-  font-style: normal;
+  font-family: 'Minerva Modern', serif !important;
+  font-style: normal !important;
   src: local('/fonts/minerva-modern/Black.ttf') url("/fonts/minerva-modern/Black.ttf") format(ttf);
 }
-
+i, em {
+  font-style: normal !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
 .minerva-font {
   font-family: 'Minerva Modern' !important;
+  font-style: normal !important;
   font-weight: normal !important;
 
 }
 
 .cochin-font {
   letter-spacing: 2px;
+  font-style: normal !important;
   font-family: 'Cochin', serif !important;
   font-weight: normal !important;
 }
