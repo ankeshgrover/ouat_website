@@ -133,9 +133,6 @@
   font-style: normal !important;
   unicode-bidi: normal;
 }
-@font-face {
-  font-family: 'Cochin', serif !important;
-  src: local('') url(../HTML/fonts/Cochin/CochinLTStd.ttf) format(ttf);
 
 /* 1. Cochin */
 @font-face {
@@ -145,7 +142,7 @@
   font-style: normal;
 }
 
-/* Optional: Add WOFF fallback */
+/*2. Optional: Add WOFF fallback */
 @font-face {
   font-family: 'Cochin';
   src: url('../HTML/fonts/Cochin/Cochin.woff2') format('woff2'),
@@ -159,9 +156,6 @@
 @font-face {
 
   font-family: 'EngraversGothic BT', serif !important;
-  src: local('EngraversGothic BT') url(/HTML/fonts/Engravers_gothic/Regular.ttf) format(otf);
-
-  font-family: 'EngraversGothic';
   src: url('../HTML/fonts/Engravers_gothic/Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -172,9 +166,6 @@
 @font-face {
 
   font-family: 'Falidasi', serif !important;
-  src: local('') url(/HTML/fonts/Falidasi-Triasie-Font/normal.otf) format(otf);
-
-  font-family: 'Falidasi';
   src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
@@ -183,10 +174,8 @@
 
 /* 4. Minerva Modern */
 @font-face {
-
-  font-family: 'Minerva Modern', serif !important;
-  font-style: normal !important;
-  src: local('/fonts/minerva-modern/Black.ttf') url("/fonts/minerva-modern/Black.ttf") format(ttf);
+  font-family: 'minerva-modern', serif !important;
+  src: url(../fonts/minerva-modern/Bold.ttf);
 }
 i, em {
   font-style: normal !important;
@@ -194,11 +183,6 @@ i, em {
   font-weight: inherit !important;
 }
 
-  font-family: 'Minerva Modern';
-  src: url('../HTML/fonts/minerva-modern/Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 /* Global font restriction */
 /* body, * {
@@ -206,7 +190,7 @@ i, em {
 } */
 
 .minerva-font {
-  font-family: 'Minerva Modern' !important;
+  font-family: 'minerva-modern', serif !important;;
   font-style: normal !important;
   font-weight: normal !important;
 
@@ -222,7 +206,8 @@ i, em {
 :root {
   /* Fonts */
   --font-primary: "Raleway", sans-serif;
-  --font-secondary: 'Minerva Modern', serif;
+  --font-secondary: 'minerva-modern', serif !important;
+
 
   /* Colors */
   --color-dark-1: #22544E;
