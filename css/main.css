@@ -169,9 +169,9 @@
 }
 
 /* Global font restriction */
-body, * {
+/* body, * {
   font-family: 'Cochin', 'EngraversGothic', 'Falidasi', 'Minerva Modern', sans-serif !important;
-}
+} */
 .minerva-font {
   font-family: 'Minerva Modern' !important;
   font-weight: normal !important;
