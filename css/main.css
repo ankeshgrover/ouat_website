@@ -166,7 +166,7 @@
 @font-face {
 
   font-family: 'Falidasi', serif !important;
-  src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('opentype');
+  src: url('../HTML/fonts/Falidasi-Triasie-Font/normal.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 
@@ -196,8 +196,21 @@ i, em {
 
 }
 
+.minerva-font {
+  font-family: 'minerva-modern', serif !important;;
+  font-style: normal !important;
+  font-weight: normal !important;
+
+}
+.Falidasi {
+  font-family: 'Falidasi', serif !important;;
+  font-style: normal !important;
+  font-weight: normal !important;
+
+}
+
 .cochin-font {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-style: normal !important;
   font-family: 'Cochin', serif !important;
   font-weight: normal !important;
