@@ -220,7 +220,7 @@
 
 :root {
   /* Fonts */
-  --font-primary: "Raleway", sans-serif;
+  --font-primary:'Cochin', serif !important;
   --font-secondary: 'minerva-modern', serif !important;
 
 
@@ -2429,6 +2429,7 @@ a:hover {
 }
 
 .footer__area .widgettitle {
+  font-family: 'Cochin', serif !important;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -5290,8 +5291,8 @@ body.elementor-editor-active [data-arts-os-animation] {
 .section__headline {
   display: block;
   width: calc(1 * (60 * 1px));
-  height: 1px;
-  background-color: var(--color-gray-1);
+  height: 2px;
+  background-color: var(--color-white);
 }
 
 @media screen and (min-width: 320px) {
@@ -12341,6 +12342,7 @@ small, .small {
 .widgettitle {
   display: block;
   font-family: var(--font-primary);
+  font-family: 'Cochin', serif !important;
   font-size: calc(var(--paragraph-min-font-size) * 1px);
   line-height: var(--paragraph-line-height);
   font-weight: 600;
@@ -13221,6 +13223,7 @@ p.card-text {
 .accordion .accordion-item {
   font-family: var(--font-primary) !important;
   border-bottom: 1px solid #e5e5e5;
+  font-family: 'Cochin', serif !important;
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
@@ -13255,6 +13258,7 @@ p.card-text {
 
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
+  font-size: 1rem;
 }
 
 .accordion button .icon {
@@ -13412,12 +13416,15 @@ p.card-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Cochin', serif !important;
+
 }
 
 .hiw_content h2 {
   margin-bottom: 0;
   color: #fff;
   font-size: 4rem;
+  font-family: 'Cochin', serif !important;
 }
 
 .hiw_content p {
@@ -13492,15 +13499,17 @@ p.card-text {
 }
 
 .about_us_content span {
-  font-size: .6rem;
+  font-size: .8rem;
   padding-bottom: 1rem;
+  font-family: 'Cochin', serif !important;
 }
 
 .about_us_content p {
-  padding: 1rem;
+  padding: 1rem 3rem;
   text-align: center;
   color: #22544E;
-  font-size: .8rem;
+  font-size: 1rem;
+  line-height: 1.2!important;
 }
 
 .fab-buy-now-btn {
@@ -13533,8 +13542,37 @@ p.card-text {
 .quick_intro {
   color: #888888;
   margin-top: 0;
+  line-height: 1.3;
+  font-size: 1rem!important;
+}
+.overflow-model {
+  overflow-y: auto;
 }
 
+.overflow-model::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-model::-webkit-scrollbar-thumb {
+  background-color: #B2986B;
+  border-radius: 50px;
+}
+
+/* -----  button hide and show buy now */
+#buyNowBtn {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#buyNowBtn.show {
+  opacity: 1;
+}
+.cutomer_reviews h2{
+  font-family: 'minerva-modern', serif !important;
+}
+.cutomer_reviews p{
+  font-family: 'Cochin', serif !important;
+}
 /* Media Query------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -13637,25 +13675,8 @@ p.card-text {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {}
-.overflow-model {
-  overflow-y: auto;
-}
-
-.overflow-model::-webkit-scrollbar {
-  width: 8px;
-}
-
-.overflow-model::-webkit-scrollbar-thumb {
-  background-color: #B2986B;
-  border-radius: 50px;
-}
-
-/* //-----  button hide and show buy now*/
-#buyNowBtn {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#buyNowBtn.show {
-  opacity: 1;
+@media only screen and (min-width: 1160px) and (max-width: 1520px) {
+  .features-bar{
+    font-size: 13px!important;
+  }
 }
