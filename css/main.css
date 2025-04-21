@@ -13650,3 +13650,12 @@ p.card-text {
   border-radius: 50px;
 }
 
+/* //-----  button hide and show buy now*/
+#buyNowBtn {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#buyNowBtn.show {
+  opacity: 1;
+}

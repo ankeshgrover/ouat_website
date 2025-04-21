@@ -41,7 +41,8 @@
 </head>
 
 <body>
-  <a href="product-list.html" class="fab-buy-now-btn button_solid">Buy Now</a>
+  <!-- <a  href="product-list.html" class="fab-buy-now-btn button_solid">Buy Now</a> -->
+  <a href="product-list.html" class="fab-buy-now-btn button_solid" id="buyNowBtn" style="display: none;">Buy Now</a>
   <div data-barba="wrapper">
     <!-- PAGE PRELOADER -->
     <div class="preloader text-center bg-dark-2" id="js-preloader" data-arts-theme-text="light">
@@ -2051,6 +2052,27 @@
           accordionButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
       }
     </script> -->
+
+    <!-- loading -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counter = document.querySelector(".preloader__counter-current");
+        const buyNowBtn = document.getElementById("buyNowBtn");
+      
+        const checkLoading = setInterval(() => {
+          const value = parseInt(counter.textContent, 10);
+      
+          if (value >= 100) {
+            clearInterval(checkLoading);
+            // Hide preloader
+            const preloader = document.getElementById("js-preloader");
+            preloader.style.display = "none";
+            // Show Buy Now button
+            buyNowBtn.style.display = "inline-block";
+          }
+        }, 100); // Check every 100ms
+      });
+      </script>
 </body>
 
 </html>
