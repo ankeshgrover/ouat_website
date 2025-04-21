@@ -156,6 +156,7 @@ window.$spinner = $('#js-spinner');
 window.$barbaWrapper = $('[data-barba="wrapper"]');
 window.$pageWrapper = $('#page-wrapper');
 window.$pageContent = $('.page-wrapper__content');
+buyNowBtn.classList.add("show");
 window.$pagePreloader = $('#js-preloader');
 window.PagePreloader = new Preloader({
 	scope: window.$document,
@@ -9711,14 +9712,19 @@ function showPopup(index) {
 	// Optional: disable cards-wrapper animation
 	if (wrapper) wrapper.classList.remove('animation');
 }
-
 function closePopup() {
 	const wrapper = document.querySelector('.cards-wrapper');
 	const popup = document.getElementById("stories_popup");
 
-	// Hide popup with fade effect
-	popup.classList.remove("show");
-	setTimeout(() => popup.style.display = "none", 300);
+	// Replace fadeIn with fadeOut
+	popup.classList.remove("animate__fadeIn");
+	popup.classList.add("animate__fadeOut");
+
+	// Wait for the animation to finish before hiding
+	setTimeout(() => {
+		popup.style.display = "none";
+		popup.classList.remove("animate__fadeOut"); // Clean up for next open
+	}, 300); // Match duration with CSS animation
 
 	// Re-enable scroll
 	document.body.classList.remove('popup-open');
@@ -9729,6 +9735,24 @@ function closePopup() {
 	// Stop typing
 	clearInterval(typingInterval);
 }
+
+// function closePopup() {
+// 	const wrapper = document.querySelector('.cards-wrapper');
+// 	const popup = document.getElementById("stories_popup");
+
+// 	// Hide popup with fade effect
+// 	popup.classList.remove("show");
+// 	setTimeout(() => popup.style.display = "none", 300);
+
+// 	// Re-enable scroll
+// 	document.body.classList.remove('popup-open');
+
+// 	// Re-enable cards-wrapper animation
+// 	if (wrapper) wrapper.classList.add('animation');
+
+// 	// Stop typing
+// 	clearInterval(typingInterval);
+// }
 
 function setViewportHeight() {
 	document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
