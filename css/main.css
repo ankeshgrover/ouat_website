@@ -13203,6 +13203,7 @@ p.card-text {
   display: flex;
   flex-direction: column;
   padding: .4rem 0;
+  font-family:'Cochin', serif !important;
 }
 
 .product_price span:nth-child(1) {
@@ -13216,6 +13217,8 @@ p.card-text {
   font-size: 28px;
   color: #22544E;
   font-weight: 700;
+  font-family:'Cochin', serif !important;
+
 }
 
 /* FAQ------------------------------------------------------------------------------ */
