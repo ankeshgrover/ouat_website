@@ -9681,11 +9681,14 @@ const popups = [
 
 let typingInterval;
 
-function showPopup(index) {
+function showPopup(event,index) {
+	event.preventDefault(); // 👈 Stop the scroll-to-top behavior
 	const wrapper = document.querySelector('.cards-wrapper');
 	const popup = document.getElementById("stories_popup");
 	const title = document.getElementById("popup-title");
 	const imagesContainer = document.getElementById("popup-images");
+	wrapper.style.animationPlayState = 'paused';
+
 
 	// Safety checks
 	if (!popup || !title || !imagesContainer || !popups[index]) return;
@@ -9710,7 +9713,7 @@ function showPopup(index) {
 	}
 
 	// Optional: disable cards-wrapper animation
-	if (wrapper) wrapper.classList.remove('animation');
+	// if (wrapper) wrapper.classList.remove('animation');
 }
 function closePopup() {
 	const wrapper = document.querySelector('.cards-wrapper');
@@ -9730,7 +9733,9 @@ function closePopup() {
 	document.body.classList.remove('popup-open');
 
 	// Re-enable cards-wrapper animation
-	if (wrapper) wrapper.classList.add('animation');
+	// if (wrapper) wrapper.classList.add('animation');
+	wrapper.style.removeProperty('animation-play-state'); 
+	// wrapper.style.animationPlayState = 'running';
 
 	// Stop typing
 	clearInterval(typingInterval);
