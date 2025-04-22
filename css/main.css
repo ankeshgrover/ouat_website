@@ -13195,6 +13195,7 @@ p.card-text {
   text-overflow: ellipsis;
   line-height: 1.5em;
   max-height: 4.5em;
+  text-transform: capitalize;
 
   /* line-height * 3 */
 }
@@ -13203,6 +13204,7 @@ p.card-text {
   display: flex;
   flex-direction: column;
   padding: .4rem 0;
+  font-family:'Cochin', serif !important;
 }
 
 .product_price span:nth-child(1) {
@@ -13216,6 +13218,8 @@ p.card-text {
   font-size: 28px;
   color: #22544E;
   font-weight: 700;
+  font-family:'Cochin', serif !important;
+
 }
 
 /* FAQ------------------------------------------------------------------------------ */
