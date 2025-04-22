@@ -9759,6 +9759,14 @@ function closePopup() {
 // 	clearInterval(typingInterval);
 // }
 
+function scrollToSection(id) {
+	const section = document.getElementById(id);
+	window.location.href = `index.html#${id}`;
+	if (section) {
+	  section.scrollIntoView({ behavior: 'smooth' });
+	}
+}
+
 function setViewportHeight() {
 	document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
 }
